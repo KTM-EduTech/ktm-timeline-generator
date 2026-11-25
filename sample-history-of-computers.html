@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The History of Computers</title>
+<meta name="description" content="From mechanical calculators to everyday AI">
+<meta name="generator" content="KTM EduTech Timeline Generator 1.0.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>html,body{margin:0;padding:0}body{background:#F8F9FB;min-height:100vh}#ktm-timeline{min-height:100vh}
+/* KTM EduTech Timeline runtime styles — everything is scoped under .ktm-tl */
+.ktm-tl{position:relative;box-sizing:border-box;background:var(--tl-bg);color:var(--tl-desc-c);font-family:var(--tl-font);font-size:calc(var(--tl-base) * var(--tl-scale));line-height:1.5;padding:var(--tl-section) clamp(12px,3vw,32px);-webkit-font-smoothing:antialiased;overflow-x:clip;--tl-scale:1;--tl-mtop:14px;--tl-colgap:clamp(16px,3vw,40px)}
+.ktm-tl *,.ktm-tl *::before,.ktm-tl *::after{box-sizing:border-box}
+.ktm-tl [hidden]{display:none!important}
+.ktm-tl.is-narrow{--tl-scale:var(--tl-mscale);--tl-colgap:14px}
+.ktm-tl__inner{max-width:var(--tl-maxw);margin:0 auto}
+.ktm-tl.is-full .ktm-tl__inner{max-width:none}
+.ktm-tl.align-left .ktm-tl__inner{margin-left:0}
+.ktm-tl__sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.ktm-tl :focus-visible{outline:3px solid var(--tl-focus);outline-offset:2px;border-radius:6px}
+.ktm-tl i[class*="fa-"]{line-height:1}
+
+/* Header + toolbar */
+.ktm-tl__header{margin:0 0 calc(var(--tl-gap) * .9)}
+.ktm-tl__heading{margin:0;font-family:var(--tl-heading-ff);font-weight:var(--tl-heading-fw);font-size:calc(var(--tl-heading-fs) * var(--tl-scale));line-height:var(--tl-heading-lh);color:var(--tl-heading-c);text-align:var(--tl-heading-ta);text-wrap:balance}
+.ktm-tl__sub{margin:.5em 0 0;font-family:var(--tl-desc-ff);font-size:calc(var(--tl-desc-fs) * 1.05 * var(--tl-scale));line-height:var(--tl-desc-lh);color:var(--tl-desc-c);text-align:var(--tl-heading-ta)}
+.ktm-tl__toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;margin:0 0 calc(var(--tl-gap) * .75)}
+.ktm-tl.align-left .ktm-tl__toolbar{justify-content:flex-start}
+.ktm-tl__searchwrap{position:relative;flex:1 1 220px;max-width:340px}
+.ktm-tl__searchwrap svg{position:absolute;left:14px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--tl-title-c);opacity:.55;pointer-events:none}
+.ktm-tl__search{width:100%;min-height:44px;padding:10px 14px 10px 40px;font:inherit;font-size:16px;color:var(--tl-title-c);background:var(--tl-card-solid);border:1px solid var(--tl-border);border-radius:999px;-webkit-appearance:none;appearance:none}
+.ktm-tl__search::placeholder{color:var(--tl-desc-c);opacity:.7}
+.ktm-tl__filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.ktm-tl__chip,.ktm-tl__tbtn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 14px;font:inherit;font-size:14px;font-weight:500;color:var(--tl-title-c);background:var(--tl-card-solid);border:1px solid var(--tl-border);border-radius:999px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.ktm-tl__chip[aria-pressed="true"]{background:var(--tl-accent);border-color:var(--tl-accent);color:var(--tl-accent-ink)}
+.ktm-tl__chip:hover,.ktm-tl__tbtn:hover{border-color:var(--tl-accent)}
+.ktm-tl__dot{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.ktm-tl__status{margin:0 0 calc(var(--tl-gap) * .6);text-align:center;font-size:.85em;color:var(--tl-desc-c)}
+.ktm-tl.align-left .ktm-tl__status{text-align:left}
+.ktm-tl__empty{padding:32px 16px;text-align:center;color:var(--tl-desc-c);border:1px dashed var(--tl-border);border-radius:var(--tl-radius)}
+
+/* Card */
+.ktm-tl__card{position:relative;display:flex;flex-direction:column;min-width:0;background:var(--tl-card-bg);border:var(--tl-bw) solid var(--tl-border);border-radius:var(--tl-radius);box-shadow:var(--tl-shadow);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.ktm-tl.cat-accent .ktm-tl__item[data-cat]:not([data-cat=""]) .ktm-tl__card{border-top:4px solid var(--cat)}
+.ktm-tl.hover-lift .ktm-tl__card:hover{transform:translateY(-3px);box-shadow:var(--tl-shadow-hover)}
+.ktm-tl.hover-glow .ktm-tl__card:hover{box-shadow:0 0 0 3px var(--tl-accent-soft),var(--tl-shadow)}
+.ktm-tl.hover-scale .ktm-tl__card:hover{transform:scale(1.015)}
+.ktm-tl.hover-border .ktm-tl__card:hover{border-color:var(--tl-accent)}
+.ktm-tl__item.is-hl .ktm-tl__card{border-color:var(--tl-hl);box-shadow:0 0 0 2px var(--tl-hl),var(--tl-shadow)}
+.ktm-tl__content{display:flex;flex-direction:column;gap:.5em;min-width:0;padding:var(--tl-pad);text-align:var(--tl-title-ta)}
+.ktm-tl__meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0}
+.ktm-tl__date{font-family:var(--tl-date-ff);font-weight:var(--tl-date-fw);font-size:calc(var(--tl-date-fs) * var(--tl-scale));line-height:var(--tl-date-lh);color:var(--tl-date-c);text-transform:var(--tl-date-tt);letter-spacing:.01em;text-align:var(--tl-date-ta)}
+.ktm-tl.date-pill .ktm-tl__date{display:inline-block;padding:.25em .8em;background:var(--tl-date-bg);border-radius:999px}
+.ktm-tl__cat{display:inline-flex;align-items:center;gap:6px;font-size:.78em;font-weight:500;color:var(--tl-desc-c)}
+.ktm-tl__badge{display:inline-flex;align-items:center;gap:5px;padding:.2em .6em;font-size:.74em;font-weight:700;color:var(--tl-hl-ink);background:var(--tl-hl);border-radius:6px}
+.ktm-tl__badge svg{width:11px;height:11px}
+.ktm-tl__title{margin:0;font-family:var(--tl-title-ff);font-weight:var(--tl-title-fw);font-size:calc(var(--tl-title-fs) * var(--tl-scale));line-height:var(--tl-title-lh);color:var(--tl-title-c);text-align:var(--tl-title-ta);overflow-wrap:anywhere}
+.ktm-tl__title i{margin-right:.4em;color:var(--tl-accent-text);font-size:.9em}
+.ktm-tl__desc,.ktm-tl__excerpt{font-family:var(--tl-desc-ff);font-weight:var(--tl-desc-fw);font-size:calc(var(--tl-desc-fs) * var(--tl-scale));line-height:var(--tl-desc-lh);color:var(--tl-desc-c);text-align:var(--tl-desc-ta);overflow-wrap:anywhere;margin:0}
+.ktm-tl__desc p{margin:0 0 .6em}.ktm-tl__desc p:last-child{margin:0}
+.ktm-tl__btn,.ktm-tl__link{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;min-height:36px;padding:6px 0;font:inherit;font-size:.9em;font-weight:600;color:var(--tl-accent-text);background:none;border:0;cursor:pointer;text-decoration:none}
+.ktm-tl__btn svg,.ktm-tl__link svg{width:14px;height:14px;flex:none}
+.ktm-tl__link:hover,.ktm-tl__btn:hover{text-decoration:underline;text-underline-offset:3px}
+.ktm-tl__toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.ktm-tl__extras{display:flex;flex-direction:column;gap:.6em}
+
+/* Hover-information mode */
+.ktm-tl.mode-hover .ktm-tl__hoverdesc{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .25s ease}
+.ktm-tl.mode-hover .ktm-tl__card:hover .ktm-tl__hoverdesc,.ktm-tl.mode-hover .ktm-tl__card:focus-within .ktm-tl__hoverdesc,.ktm-tl.mode-hover .ktm-tl__card.is-peek .ktm-tl__hoverdesc,.ktm-tl.is-capture .ktm-tl__hoverdesc{max-height:2000px;opacity:1}
+.ktm-tl__hint{font-size:.78em;color:var(--tl-desc-c);opacity:.8}
+.ktm-tl.mode-hover .ktm-tl__card:hover .ktm-tl__hint,.ktm-tl.mode-hover .ktm-tl__card:focus-within .ktm-tl__hint,.ktm-tl.is-capture .ktm-tl__hint{display:none}
+
+/* Media */
+.ktm-tl__media{position:relative;margin:0;min-width:0}
+.ktm-tl__imgbtn{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;border-radius:inherit}
+.ktm-tl__img{display:block;width:100%;height:var(--tl-img-h);object-fit:var(--tl-img-fit);background:rgba(127,127,127,.12)}
+.ktm-tl.img-top .ktm-tl__media .ktm-tl__img{border-radius:calc(var(--tl-radius) - var(--tl-bw)) calc(var(--tl-radius) - var(--tl-bw)) 0 0}
+.ktm-tl.img-bottom .ktm-tl__card{flex-direction:column-reverse}
+.ktm-tl.img-bottom .ktm-tl__media .ktm-tl__img{border-radius:0 0 calc(var(--tl-radius) - var(--tl-bw)) calc(var(--tl-radius) - var(--tl-bw))}
+.ktm-tl.img-left .ktm-tl__card.has-img,.ktm-tl.img-right .ktm-tl__card.has-img{flex-direction:row}
+.ktm-tl.img-right .ktm-tl__card.has-img{flex-direction:row-reverse}
+.ktm-tl.img-left .ktm-tl__card.has-img>.ktm-tl__media,.ktm-tl.img-right .ktm-tl__card.has-img>.ktm-tl__media{flex:0 0 38%}
+.ktm-tl.img-left .ktm-tl__card.has-img>.ktm-tl__media .ktm-tl__img,.ktm-tl.img-right .ktm-tl__card.has-img>.ktm-tl__media .ktm-tl__img{height:100%;min-height:var(--tl-img-h-side)}
+.ktm-tl.img-left .ktm-tl__media .ktm-tl__img{border-radius:calc(var(--tl-radius) - var(--tl-bw)) 0 0 calc(var(--tl-radius) - var(--tl-bw))}
+.ktm-tl.img-right .ktm-tl__media .ktm-tl__img{border-radius:0 calc(var(--tl-radius) - var(--tl-bw)) calc(var(--tl-radius) - var(--tl-bw)) 0}
+.ktm-tl.is-narrow.img-left .ktm-tl__card.has-img,.ktm-tl.is-narrow.img-right .ktm-tl__card.has-img{flex-direction:column}
+.ktm-tl.is-narrow.img-left .ktm-tl__media .ktm-tl__img,.ktm-tl.is-narrow.img-right .ktm-tl__media .ktm-tl__img{height:var(--tl-img-h);border-radius:calc(var(--tl-radius) - var(--tl-bw)) calc(var(--tl-radius) - var(--tl-bw)) 0 0}
+.ktm-tl.is-narrow.hide-img-m .ktm-tl__card>.ktm-tl__media{display:none}
+.ktm-tl__cap{margin:0;padding:6px var(--tl-pad) 0;font-size:.8em;color:var(--tl-desc-c)}
+.ktm-tl__imgfail{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:var(--tl-img-h);font-size:.85em;color:var(--tl-desc-c);background:repeating-linear-gradient(45deg,rgba(127,127,127,.08) 0 10px,rgba(127,127,127,.14) 10px 20px);border-radius:inherit}
+.ktm-tl__imgfail svg{width:18px;height:18px}
+.ktm-tl__video{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;padding:10px 12px;font:inherit;font-size:.9em;font-weight:600;color:var(--tl-title-c);background:rgba(127,127,127,.07);border:1px dashed var(--tl-border);border-radius:10px;cursor:pointer;text-align:left}
+.ktm-tl__video svg{width:26px;height:26px;flex:none;color:#e62117}
+.ktm-tl__frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}
+.ktm-tl__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ktm-tl__audio{width:100%;min-height:40px}
+.ktm-tl__mcap{margin:0;font-size:.8em;color:var(--tl-desc-c)}
+
+/* Markers */
+.ktm-tl__marker{position:relative;z-index:2;display:grid;place-items:center;flex:none;width:var(--tl-ms);height:var(--tl-ms);font-size:calc(var(--tl-ms) * .42);font-weight:700;color:var(--tl-marker-ink);background:var(--tl-marker);border:var(--tl-mbw) solid var(--tl-marker-border);border-radius:50%;box-shadow:0 0 0 4px var(--tl-bg-solid);font-family:var(--tl-font)}
+.ktm-tl__marker>span{display:grid;place-items:center;line-height:1}
+.ktm-tl.mk-square .ktm-tl__marker{border-radius:6px}
+.ktm-tl.mk-diamond .ktm-tl__marker{border-radius:5px;transform:rotate(45deg) scale(.86)}
+.ktm-tl.mk-diamond .ktm-tl__marker>span{transform:rotate(-45deg)}
+.ktm-tl.mk-ring .ktm-tl__marker{background:var(--tl-bg-solid);border:calc(var(--tl-ms) * .16) solid var(--tl-marker);color:var(--tl-marker)}
+.ktm-tl.mk-hexagon .ktm-tl__marker{border-radius:0;border:0;clip-path:polygon(25% 4%,75% 4%,100% 50%,75% 96%,25% 96%,0 50%);box-shadow:none}
+.ktm-tl.mk-none .ktm-tl__marker{visibility:hidden}
+.ktm-tl.mc-dot .ktm-tl__marker>span{width:34%;height:34%;border-radius:50%;background:var(--tl-marker-ink)}
+.ktm-tl__item.is-hl .ktm-tl__marker{background:var(--tl-hl);color:var(--tl-hl-ink);border-color:var(--tl-hl)}
+.ktm-tl.mk-ring .ktm-tl__item.is-hl .ktm-tl__marker{background:var(--tl-bg-solid);border-color:var(--tl-hl);color:var(--tl-hl)}
+.ktm-tl__marker.is-click{cursor:pointer}
+
+/* Shared rail (vertical layouts) */
+.ktm-tl__list{position:relative;margin:0;padding:0;list-style:none}
+.ktm-tl__item{position:relative;margin:0 0 var(--tl-gap);padding:0;list-style:none}
+.ktm-tl__item.is-last{margin-bottom:0}
+.ktm-tl__rail{position:relative;display:flex;justify-content:center;padding-top:var(--tl-mtop)}
+.ktm-tl__rail::before{content:"";position:absolute;top:0;bottom:calc(-1 * var(--tl-gap));left:50%;margin-left:calc(var(--tl-lw) / -2);border-left:var(--tl-lw) var(--tl-ls) var(--tl-line);transform-origin:top}
+.ktm-tl__item.is-first .ktm-tl__rail::before{top:calc(var(--tl-mtop) + var(--tl-ms) / 2)}
+.ktm-tl__item.is-last .ktm-tl__rail::before{bottom:auto;height:calc(var(--tl-mtop) + var(--tl-ms) / 2)}
+.ktm-tl__item.is-first.is-last .ktm-tl__rail::before{display:none}
+.ktm-tl__dateout{min-width:0;padding-top:calc(var(--tl-mtop) + var(--tl-ms) / 2 - .8em)}
+.ktm-tl__dateout .ktm-tl__date{display:inline-block}
+.ktm-tl.date-plain .ktm-tl__dateout{padding-top:calc(var(--tl-mtop) + var(--tl-ms) / 2 - .7em)}
+
+/* Connectors from card to rail */
+.ktm-tl.conn-line .ktm-tl__vcard::before{content:"";position:absolute;top:calc(var(--tl-mtop) + var(--tl-ms) / 2);width:var(--tl-colgap);border-top:var(--tl-lw) var(--tl-ls) var(--tl-line);margin-top:calc(var(--tl-lw) / -2)}
+.ktm-tl.conn-arrow .ktm-tl__vcard::after{content:"";position:absolute;top:calc(var(--tl-mtop) + var(--tl-ms) / 2 - 8px);width:16px;height:16px;background:var(--tl-card-solid);border:var(--tl-bw) solid var(--tl-border);transform:rotate(45deg);z-index:-1}
+.ktm-tl.conn-arrow .ktm-tl__vcard{z-index:1}
+
+/* Layout 1 — Alternating */
+.ktm-tl--alternating .ktm-tl__item{display:grid;grid-template-columns:minmax(0,1fr) var(--tl-ms) minmax(0,1fr);column-gap:var(--tl-colgap);align-items:start}
+.ktm-tl--alternating .ktm-tl__rail{grid-column:2;grid-row:1 / span 2;align-self:stretch}
+.ktm-tl--alternating .is-left .ktm-tl__card{grid-column:1;grid-row:1}
+.ktm-tl--alternating .is-right .ktm-tl__card{grid-column:3;grid-row:1}
+.ktm-tl--alternating .is-left .ktm-tl__dateout{grid-column:3;grid-row:1;text-align:left}
+.ktm-tl--alternating .is-right .ktm-tl__dateout{grid-column:1;grid-row:1;text-align:right}
+.ktm-tl--alternating.conn-line .is-left .ktm-tl__vcard::before{right:calc(-1 * var(--tl-colgap) - var(--tl-bw))}
+.ktm-tl--alternating.conn-line .is-right .ktm-tl__vcard::before{left:calc(-1 * var(--tl-colgap) - var(--tl-bw))}
+.ktm-tl--alternating.conn-arrow .is-left .ktm-tl__vcard::after{right:-9px;border-left:0;border-bottom:0}
+.ktm-tl--alternating.conn-arrow .is-right .ktm-tl__vcard::after{left:-9px;border-right:0;border-top:0}
+/* Single-sided rail variant (single layout + alternating on narrow screens) */
+.ktm-tl--single .ktm-tl__item,.ktm-tl--alternating.is-narrow .ktm-tl__item{display:grid;grid-template-columns:var(--tl-ms) minmax(0,1fr);column-gap:var(--tl-colgap);align-items:start}
+.ktm-tl--single .ktm-tl__rail,.ktm-tl--alternating.is-narrow .ktm-tl__rail{grid-column:1;grid-row:1 / span 2;align-self:stretch}
+.ktm-tl--single .ktm-tl__card,.ktm-tl--alternating.is-narrow .ktm-tl__item .ktm-tl__card{grid-column:2;grid-row:1}
+.ktm-tl--single .ktm-tl__item.has-dateout .ktm-tl__card,.ktm-tl--alternating.is-narrow .ktm-tl__item.has-dateout .ktm-tl__card{grid-row:2;margin-top:8px}
+.ktm-tl--single .ktm-tl__dateout,.ktm-tl--alternating.is-narrow .ktm-tl__item .ktm-tl__dateout{grid-column:2;grid-row:1;text-align:left}
+.ktm-tl--single.conn-line .ktm-tl__vcard::before,.ktm-tl--alternating.is-narrow.conn-line .ktm-tl__item .ktm-tl__vcard::before{left:calc(-1 * var(--tl-colgap) - var(--tl-bw));right:auto}
+.ktm-tl--single.conn-arrow .ktm-tl__vcard::after,.ktm-tl--alternating.is-narrow.conn-arrow .ktm-tl__item .ktm-tl__vcard::after{left:-9px;right:auto;border:var(--tl-bw) solid var(--tl-border);border-right:0;border-top:0}
+.ktm-tl--single .ktm-tl__item.has-dateout .ktm-tl__vcard::before,.ktm-tl--single .ktm-tl__item.has-dateout .ktm-tl__vcard::after,.ktm-tl--alternating.is-narrow .ktm-tl__item.has-dateout .ktm-tl__vcard::before,.ktm-tl--alternating.is-narrow .ktm-tl__item.has-dateout .ktm-tl__vcard::after{display:none}
+/* Single: central line with dates on the left */
+.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__item{grid-template-columns:minmax(0,1fr) var(--tl-ms) minmax(0,2fr)}
+.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__rail{grid-column:2;grid-row:1}
+.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__card,.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__item.has-dateout .ktm-tl__card{grid-column:3;grid-row:1;margin-top:0}
+.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__dateout{grid-column:1;grid-row:1;text-align:right}
+.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__item.has-dateout .ktm-tl__vcard::before,.ktm-tl--single.line-center:not(.is-narrow) .ktm-tl__item.has-dateout .ktm-tl__vcard::after{display:block}
+
+/* Layout 3 — Horizontal */
+.ktm-tl__h{position:relative}
+.ktm-tl__hscroll{overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:var(--tl-line) transparent;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding:6px 2px 4px}
+.ktm-tl.h-snap .ktm-tl__hscroll{scroll-snap-type:x mandatory;scroll-padding-inline:6px}
+.ktm-tl__hlist{display:flex;gap:var(--tl-gap);width:max-content;margin:0;padding:0 6px 14px;list-style:none}
+.ktm-tl__hlist .ktm-tl__item{display:flex;flex-direction:column;flex:0 0 var(--tl-hcw);width:var(--tl-hcw);margin:0;scroll-snap-align:start}
+.ktm-tl__htop{min-height:2.2em;display:flex;align-items:flex-end;justify-content:center;padding-bottom:8px}
+.ktm-tl__hrail{position:relative;display:flex;justify-content:center;margin-bottom:16px}
+.ktm-tl__hrail::before{content:"";position:absolute;top:50%;left:0;right:calc(-1 * var(--tl-gap));margin-top:calc(var(--tl-lw) / -2);border-top:var(--tl-lw) var(--tl-ls) var(--tl-line);transform-origin:left}
+.ktm-tl__hlist .ktm-tl__item.is-first .ktm-tl__hrail::before{left:50%}
+.ktm-tl__hlist .ktm-tl__item.is-last .ktm-tl__hrail::before{right:50%}
+.ktm-tl__hlist .ktm-tl__item.is-first.is-last .ktm-tl__hrail::before{display:none}
+.ktm-tl__hlist .ktm-tl__card{flex:1 1 auto}
+.ktm-tl.conn-arrow .ktm-tl__hlist .ktm-tl__card::after{content:"";position:absolute;top:-9px;left:calc(50% - 8px);width:16px;height:16px;background:var(--tl-card-solid);border:var(--tl-bw) solid var(--tl-border);border-right:0;border-bottom:0;transform:rotate(45deg)}
+.ktm-tl.conn-line .ktm-tl__hlist .ktm-tl__card::before{content:"";position:absolute;top:-17px;left:50%;height:16px;border-left:var(--tl-lw) var(--tl-ls) var(--tl-line)}
+.ktm-tl__hnav{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:10px}
+.ktm-tl__hnav button{display:grid;place-items:center;width:44px;height:44px;padding:0;color:var(--tl-title-c);background:var(--tl-card-solid);border:1px solid var(--tl-border);border-radius:50%;cursor:pointer}
+.ktm-tl__hnav button:disabled{opacity:.35;cursor:default}
+.ktm-tl__hnav button svg{width:18px;height:18px}
+.ktm-tl__hnav span{font-size:.85em;color:var(--tl-desc-c);min-width:7em;text-align:center}
+
+/* Layout 4 — Cards */
+.ktm-tl__grid{display:grid;grid-template-columns:repeat(var(--tl-cols-eff,3),minmax(0,1fr));gap:var(--tl-gap);margin:0;padding:0;list-style:none}
+.ktm-tl__grid .ktm-tl__item{display:flex;flex-direction:column;margin:0}
+.ktm-tl__chead{position:relative;display:flex;align-items:center;gap:12px;margin-bottom:12px;min-height:var(--tl-ms)}
+.ktm-tl.cards-conn .ktm-tl__grid .ktm-tl__item::before{content:"";position:absolute;top:calc(var(--tl-ms) / 2);left:var(--tl-ms);right:calc(-1 * var(--tl-gap));margin-top:calc(var(--tl-lw) / -2);border-top:var(--tl-lw) var(--tl-ls) var(--tl-line);transform-origin:left;z-index:0}
+.ktm-tl.cards-conn .ktm-tl__grid .ktm-tl__item.row-end::before,.ktm-tl.cards-conn .ktm-tl__grid .ktm-tl__item.is-last::before{display:none}
+.ktm-tl__chead .ktm-tl__dateout{padding:0;position:relative;z-index:1}
+.ktm-tl.cards-conn .ktm-tl__chead .ktm-tl__date{box-shadow:0 0 0 4px var(--tl-bg-solid)}
+.ktm-tl.cards-conn.date-plain .ktm-tl__chead .ktm-tl__date{background:var(--tl-bg-solid);padding:0 .4em}
+.ktm-tl__grid .ktm-tl__card{flex:1 1 auto}
+
+/* Layout 5 — Roadmap */
+.ktm-tl__road{position:relative;padding:4px 34px 8px}
+.ktm-tl__roadsvg{position:absolute;inset:0;top:0;left:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.ktm-tl__roadsvg path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ktm-tl__roadsvg .base{stroke:var(--tl-line);stroke-width:calc(var(--tl-lw) * 1.6)}
+.ktm-tl.has-progress .ktm-tl__roadsvg .base{opacity:.28}
+.ktm-tl__roadsvg .prog{stroke:var(--tl-prog);stroke-width:calc(var(--tl-lw) * 1.6)}
+.ktm-tl__rgrid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(var(--tl-per,3),minmax(0,1fr));column-gap:var(--tl-gap);row-gap:calc(var(--tl-gap) * 1.6);margin:0;padding:0;list-style:none}
+.ktm-tl__rgrid .ktm-tl__item{display:flex;flex-direction:column;align-items:stretch;margin:0}
+.ktm-tl__rhead{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:12px}
+.ktm-tl__rhead .ktm-tl__dateout{padding:0;text-align:center}
+.ktm-tl__rgrid .ktm-tl__card{flex:1 1 auto}
+.ktm-tl.has-progress .ktm-tl__rgrid .ktm-tl__item:not(.is-done):not(.is-hl) .ktm-tl__marker{background:var(--tl-card-solid);color:var(--tl-line);border-color:var(--tl-line)}
+.ktm-tl.has-progress .ktm-tl__rgrid .ktm-tl__item.is-done:not(.is-hl) .ktm-tl__marker{background:var(--tl-prog);color:var(--tl-prog-ink);border-color:var(--tl-prog)}
+.ktm-tl__state{display:inline-flex;align-items:center;gap:5px;font-size:.72em;font-weight:700;padding:.15em .55em;border-radius:6px;border:1px solid var(--tl-border);color:var(--tl-desc-c)}
+.ktm-tl__state.is-done{background:var(--tl-prog);border-color:var(--tl-prog);color:var(--tl-prog-ink)}
+.ktm-tl__progress{display:flex;align-items:center;gap:12px;max-width:420px;margin:0 auto calc(var(--tl-gap) * .8);font-size:.85em;color:var(--tl-desc-c)}
+.ktm-tl__pbar{flex:1;height:8px;border-radius:99px;background:rgba(127,127,127,.2);overflow:hidden}
+.ktm-tl__pbar span{display:block;height:100%;background:var(--tl-prog);border-radius:inherit}
+
+/* Layout 6 — Compact */
+.ktm-tl--compact{--tl-ms:var(--tl-ms-c)}
+.ktm-tl--compact .ktm-tl__item{display:grid;grid-template-columns:var(--tl-datecol) var(--tl-ms) minmax(0,1fr);column-gap:14px;align-items:start;margin-bottom:calc(var(--tl-gap) * .35)}
+.ktm-tl--compact .ktm-tl__rail{grid-column:2;grid-row:1;align-self:stretch;padding-top:10px}
+.ktm-tl--compact .ktm-tl__rail::before{bottom:calc(-1 * var(--tl-gap) * .35)}
+.ktm-tl--compact .ktm-tl__item.is-first .ktm-tl__rail::before{top:calc(10px + var(--tl-ms) / 2)}
+.ktm-tl--compact .ktm-tl__item.is-last .ktm-tl__rail::before{height:calc(10px + var(--tl-ms) / 2)}
+.ktm-tl--compact .ktm-tl__dateout{grid-column:1;grid-row:1;padding-top:8px;text-align:right}
+.ktm-tl--compact .ktm-tl__date{font-size:calc(var(--tl-date-fs) * .92 * var(--tl-scale))}
+.ktm-tl--compact.date-pill .ktm-tl__dateout .ktm-tl__date{padding:.15em .6em}
+.ktm-tl--compact .ktm-tl__card{grid-column:3;grid-row:1;box-shadow:none}
+.ktm-tl--compact.hover-lift .ktm-tl__card:hover{box-shadow:var(--tl-shadow)}
+.ktm-tl--compact .ktm-tl__content{padding:calc(var(--tl-pad) * .45) calc(var(--tl-pad) * .6);gap:.3em}
+.ktm-tl--compact .ktm-tl__title{font-size:calc(var(--tl-title-fs) * .86 * var(--tl-scale))}
+.ktm-tl--compact .ktm-tl__desc{font-size:calc(var(--tl-desc-fs) * .92 * var(--tl-scale))}
+.ktm-tl--compact .ktm-tl__card.has-img{flex-direction:row!important}
+.ktm-tl--compact .ktm-tl__card>.ktm-tl__media{flex:0 0 72px!important}
+.ktm-tl--compact .ktm-tl__card>.ktm-tl__media .ktm-tl__img,.ktm-tl--compact .ktm-tl__card>.ktm-tl__media .ktm-tl__imgfail{height:100%!important;min-height:64px;border-radius:calc(var(--tl-radius) - var(--tl-bw)) 0 0 calc(var(--tl-radius) - var(--tl-bw))!important}
+.ktm-tl--compact .ktm-tl__card>.ktm-tl__media .ktm-tl__cap{display:none}
+.ktm-tl--compact.is-narrow{--tl-datecol:4.6em}
+.ktm-tl--compact .ktm-tl__vcard::before,.ktm-tl--compact .ktm-tl__vcard::after{display:none!important}
+.ktm-tl--compact .ktm-tl__marker{box-shadow:0 0 0 3px var(--tl-bg-solid);font-size:calc(var(--tl-ms) * .5)}
+
+/* Modal + lightbox */
+.ktm-tl__modal{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;padding:16px}
+.ktm-tl__backdrop{position:absolute;inset:0;background:rgba(10,12,30,.62)}
+.ktm-tl__dialog{position:relative;width:min(720px,100%);max-height:calc(100% - 16px);overflow:auto;background:var(--tl-card-solid);color:var(--tl-desc-c);border-radius:calc(var(--tl-radius) + 4px);box-shadow:0 24px 60px rgba(0,0,0,.35);font-family:var(--tl-font)}
+.ktm-tl__modal.is-lightbox .ktm-tl__dialog{width:min(1100px,100%);background:#0b0c18;color:#eef0fa}
+.ktm-tl__close{position:absolute;top:10px;right:10px;z-index:2;display:grid;place-items:center;width:44px;height:44px;padding:0;color:var(--tl-title-c);background:var(--tl-card-solid);border:1px solid var(--tl-border);border-radius:50%;cursor:pointer}
+.ktm-tl__close svg{width:18px;height:18px}
+.ktm-tl__mbody{display:flex;flex-direction:column;gap:12px;padding:24px}
+.ktm-tl__mbody .ktm-tl__title{padding-right:48px;font-size:calc(var(--tl-title-fs) * 1.25)}
+.ktm-tl__mbody .ktm-tl__img{height:auto;max-height:60vh;object-fit:contain;border-radius:10px}
+.ktm-tl__modal.is-lightbox .ktm-tl__mbody{padding:56px 16px 16px}
+.ktm-tl__modal.is-lightbox .ktm-tl__img{max-height:78vh;background:none}
+.ktm-tl__modal.is-lightbox .ktm-tl__cap{color:#cfd2ea;padding:4px 0 0;text-align:center}
+
+/* Animation */
+.ktm-tl.has-anim .ktm-tl__item{opacity:0;transition:opacity var(--tl-dur) ease,transform var(--tl-dur) cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--tl-delay) + var(--k,0) * var(--tl-stagger))}
+.ktm-tl.has-anim.an-slide-up .ktm-tl__item{transform:translateY(26px)}
+.ktm-tl.has-anim.an-slide-side .ktm-tl__item{transform:translateX(-30px)}
+.ktm-tl.has-anim.an-slide-side .ktm-tl__item.is-right{transform:translateX(30px)}
+.ktm-tl.has-anim.an-zoom .ktm-tl__item{transform:scale(.94)}
+.ktm-tl.has-anim .ktm-tl__item.is-in{opacity:1;transform:none}
+.ktm-tl.has-anim.an-line .ktm-tl__rail::before{transform:scaleY(0);transition:transform calc(var(--tl-dur) * 1.4) ease;transition-delay:calc(var(--tl-delay) + var(--k,0) * var(--tl-stagger))}
+.ktm-tl.has-anim.an-line .ktm-tl__item.is-in .ktm-tl__rail::before{transform:scaleY(1)}
+.ktm-tl.has-anim.an-line .ktm-tl__hrail::before,.ktm-tl.has-anim.an-line.cards-conn .ktm-tl__grid .ktm-tl__item::before{transform:scaleX(0);transition:transform calc(var(--tl-dur) * 1.4) ease;transition-delay:calc(var(--tl-delay) + var(--k,0) * var(--tl-stagger))}
+.ktm-tl.has-anim.an-line .ktm-tl__item.is-in .ktm-tl__hrail::before,.ktm-tl.has-anim.an-line.cards-conn .ktm-tl__grid .ktm-tl__item.is-in::before{transform:scaleX(1)}
+.ktm-tl.has-anim.an-marker .ktm-tl__item.is-in .ktm-tl__marker>span{animation:ktm-tl-pop calc(var(--tl-dur) * .9) cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--tl-delay) + var(--k,0) * var(--tl-stagger) + var(--tl-dur) * .3)}
+.ktm-tl.has-anim.an-marker .ktm-tl__item.is-hl.is-in .ktm-tl__marker::after{content:"";position:absolute;inset:-6px;border-radius:inherit;border:2px solid var(--tl-hl);animation:ktm-tl-pulse 1.8s ease-out 3;animation-delay:calc(var(--tl-delay) + var(--tl-dur))}
+.ktm-tl.mk-diamond.has-anim .ktm-tl__item.is-hl.is-in .ktm-tl__marker::after,.ktm-tl.mk-hexagon.has-anim .ktm-tl__item.is-hl.is-in .ktm-tl__marker::after{display:none}
+@keyframes ktm-tl-pop{0%{transform:scale(0)}100%{transform:scale(1)}}
+@keyframes ktm-tl-pulse{0%{opacity:.9;transform:scale(.9)}100%{opacity:0;transform:scale(1.5)}}
+@media (prefers-reduced-motion:reduce){.ktm-tl *,.ktm-tl *::before,.ktm-tl *::after{transition:none!important;animation:none!important}.ktm-tl.has-anim .ktm-tl__item{opacity:1!important;transform:none!important}.ktm-tl.has-anim .ktm-tl__rail::before,.ktm-tl.has-anim .ktm-tl__hrail::before,.ktm-tl.has-anim .ktm-tl__grid .ktm-tl__item::before{transform:none!important}}
+@media print{.ktm-tl .ktm-tl__item{opacity:1!important;transform:none!important}.ktm-tl__toolbar,.ktm-tl__hnav{display:none!important}.ktm-tl__hscroll{overflow:visible!important}.ktm-tl__hlist{flex-wrap:wrap;width:auto}}
+
+/* Capture mode (PNG export) */
+.ktm-tl.is-capture .ktm-tl__hscroll{overflow:visible}
+.ktm-tl.is-capture .ktm-tl__hnav{display:none}
+.ktm-tl.is-capture.cap-notools .ktm-tl__toolbar,.ktm-tl.is-capture.cap-notools .ktm-tl__status{display:none}
+</style>
+</head>
+<body>
+<main id="ktm-timeline" class="ktm-tl ktm-tl--alternating mk-circle mc-icon conn-arrow date-pill hover-lift img-top mode-always h-snap cards-conn" style="--tl-bg:#F8F9FB;--tl-bg-solid:#F8F9FB;--tl-font:&quot;Poppins&quot;,system-ui,-apple-system,&quot;Segoe UI&quot;,Roboto,Arial,sans-serif;--tl-base:16px;--tl-line:#232450;--tl-lw:3px;--tl-ls:solid;--tl-marker:#FEDC69;--tl-marker-ink:#232450;--tl-marker-border:#232450;--tl-mbw:2px;--tl-ms:40px;--tl-ms-c:22px;--tl-card-bg:rgba(255,255,255,1.00);--tl-card-solid:#FFFFFF;--tl-border:#E3E5EE;--tl-bw:1px;--tl-radius:14px;--tl-pad:22px;--tl-shadow:0 6px 18px rgba(16,18,40,.08),0 2px 6px rgba(16,18,40,.05);--tl-shadow-hover:0 14px 32px rgba(16,18,40,.14);--tl-accent:#232450;--tl-accent-ink:#ffffff;--tl-accent-text:#232450;--tl-accent-soft:rgba(35,36,80,0.25);--tl-hl:#FEDC69;--tl-hl-ink:#14152e;--tl-prog:#232450;--tl-prog-ink:#ffffff;--tl-date-bg:#FEDC69;--tl-focus:#232450;--tl-gap:32px;--tl-section:48px;--tl-maxw:1100px;--tl-img-h:180px;--tl-img-h-side:144px;--tl-img-fit:cover;--tl-dur:600ms;--tl-delay:0ms;--tl-stagger:90ms;--tl-mscale:0.92;--tl-hcw:300px;--tl-datecol:7.2em;--tl-cols:3;--tl-heading-ff:var(--tl-font);--tl-heading-fs:34px;--tl-heading-fw:700;--tl-heading-c:#232450;--tl-heading-lh:1.2;--tl-heading-ta:center;--tl-title-ff:var(--tl-font);--tl-title-fs:19px;--tl-title-fw:600;--tl-title-c:#232450;--tl-title-lh:1.3;--tl-title-ta:left;--tl-date-ff:var(--tl-font);--tl-date-fs:13px;--tl-date-fw:600;--tl-date-c:#232450;--tl-date-lh:1.4;--tl-date-ta:left;--tl-desc-ff:var(--tl-font);--tl-desc-fs:15px;--tl-desc-fw:400;--tl-desc-c:#4A4D6A;--tl-desc-lh:1.6;--tl-desc-ta:left;--tl-date-tt:none" aria-label="The History of Computers"><div class="ktm-tl__inner"><header class="ktm-tl__header"><h2 class="ktm-tl__heading">The History of Computers</h2><p class="ktm-tl__sub">From mechanical calculators to everyday AI</p></header><div class="ktm-tl__toolbar"><div class="ktm-tl__searchwrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><label class="ktm-tl__sr" for="ktm-s-k0">Search events</label><input type="search" id="ktm-s-k0" class="ktm-tl__search" placeholder="Search events" autocomplete="off" value=""></div><div class="ktm-tl__filters" role="group" aria-label="Filter by category"><button type="button" class="ktm-tl__chip" data-cat="" aria-pressed="true">All</button><button type="button" class="ktm-tl__chip" data-cat="cat-sbcgxq81pd" aria-pressed="false"><span class="ktm-tl__dot" style="--c:#8C5A3C"></span>Mechanical era</button><button type="button" class="ktm-tl__chip" data-cat="cat-cj9bb281pd" aria-pressed="false"><span class="ktm-tl__dot" style="--c:#2563EB"></span>Electronic era</button><button type="button" class="ktm-tl__chip" data-cat="cat-c3ajlv81pd" aria-pressed="false"><span class="ktm-tl__dot" style="--c:#16A34A"></span>Personal &amp; connected</button></div></div><p class="ktm-tl__status" aria-live="polite"></p><ol class="ktm-tl__list"><li class="ktm-tl__item is-left" data-id="ev-h3pr6681pd" data-cat="cat-sbcgxq81pd" data-search="difference engine proposed charles babbage designs a mechanical calculator to compute and print mathematical tables without human error. 1822 mechanical era" style="--cat:#8C5A3C"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-gears" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-h3pr6681pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 1 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1822">1822</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#8C5A3C"></span>Mechanical era</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-h3pr6681pd">Difference Engine proposed</h3><div class="ktm-tl__desc"><p>Charles Babbage designs a mechanical calculator to compute and print mathematical tables without human error.</p></div></div></article></li><li class="ktm-tl__item is-hl is-right" data-id="ev-fjpe5k81pd" data-cat="cat-sbcgxq81pd" data-search="ada lovelace publishes her notes lovelace&#39;s notes on the analytical engine include a method for calculating bernoulli numbers, widely regarded as the first published computer program. 1843 mechanical era" style="--cat:#8C5A3C"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-feather" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-fjpe5k81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 2 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1843">1843</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#8C5A3C"></span>Mechanical era</span><span class="ktm-tl__badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>Key milestone</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-fjpe5k81pd">Ada Lovelace publishes her Notes</h3><div class="ktm-tl__desc"><p>Lovelace&#39;s notes on the Analytical Engine include a method for calculating Bernoulli numbers, widely regarded as the first published computer program.</p></div></div></article></li><li class="ktm-tl__item is-left" data-id="ev-9q26uf81pd" data-cat="cat-cj9bb281pd" data-search="turing describes the universal machine alan turing&#39;s paper &quot;on computable numbers&quot; sets out an abstract machine that defines what can be computed. 1936 electronic era" style="--cat:#2563EB"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-brain" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-9q26uf81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 3 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1936">1936</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#2563EB"></span>Electronic era</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-9q26uf81pd">Turing describes the universal machine</h3><div class="ktm-tl__desc"><p>Alan Turing&#39;s paper &quot;On Computable Numbers&quot; sets out an abstract machine that defines what can be computed.</p></div></div></article></li><li class="ktm-tl__item is-hl is-right" data-id="ev-sw2sv381pd" data-cat="cat-cj9bb281pd" data-search="eniac unveiled one of the first general-purpose electronic computers is presented to the public at the university of pennsylvania. it filled a large room and used about 18,000 vacuum tubes. 1946 electronic era" style="--cat:#2563EB"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-server" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-sw2sv381pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 4 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1946">1946</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#2563EB"></span>Electronic era</span><span class="ktm-tl__badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>Key milestone</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-sw2sv381pd">ENIAC unveiled</h3><div class="ktm-tl__desc"><p>One of the first general-purpose electronic computers is presented to the public at the University of Pennsylvania. It filled a large room and used about 18,000 vacuum tubes.</p></div></div></article></li><li class="ktm-tl__item is-left" data-id="ev-afnvxl81pd" data-cat="cat-cj9bb281pd" data-search="the transistor researchers at bell labs demonstrate the transistor, which later replaces bulky vacuum tubes and makes smaller computers possible. 1947 electronic era" style="--cat:#2563EB"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-microchip" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-afnvxl81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 5 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1947">1947</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#2563EB"></span>Electronic era</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-afnvxl81pd">The transistor</h3><div class="ktm-tl__desc"><p>Researchers at Bell Labs demonstrate the transistor, which later replaces bulky vacuum tubes and makes smaller computers possible.</p></div></div></article></li><li class="ktm-tl__item is-right" data-id="ev-8mztga81pd" data-cat="cat-cj9bb281pd" data-search="first commercial microprocessor intel releases the 4004, placing a complete central processing unit on a single chip. 1971 electronic era" style="--cat:#2563EB"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-microchip" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-8mztga81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 6 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1971">1971</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#2563EB"></span>Electronic era</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-8mztga81pd">First commercial microprocessor</h3><div class="ktm-tl__desc"><p>Intel releases the 4004, placing a complete central processing unit on a single chip.</p></div></div></article></li><li class="ktm-tl__item is-left" data-id="ev-wj7rgt81pd" data-cat="cat-c3ajlv81pd" data-search="the ibm personal computer the ibm pc brings computers into offices and homes and sets a standard many manufacturers follow. 1981 personal &amp; connected" style="--cat:#16A34A"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-desktop" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-wj7rgt81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 7 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1981">1981</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#16A34A"></span>Personal &amp; connected</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-wj7rgt81pd">The IBM Personal Computer</h3><div class="ktm-tl__desc"><p>The IBM PC brings computers into offices and homes and sets a standard many manufacturers follow.</p></div></div></article></li><li class="ktm-tl__item is-hl is-right" data-id="ev-h624tz81pd" data-cat="cat-c3ajlv81pd" data-search="the world wide web tim berners-lee proposes the web in 1989 at cern; the first website goes online in 1991. 1989 – 1991 personal &amp; connected" style="--cat:#16A34A"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-globe" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-h624tz81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 8 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="1989">1989 – 1991</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#16A34A"></span>Personal &amp; connected</span><span class="ktm-tl__badge"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>Key milestone</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-h624tz81pd">The World Wide Web</h3><div class="ktm-tl__desc"><p>Tim Berners-Lee proposes the Web in 1989 at CERN; the first website goes online in 1991.</p></div></div></article></li><li class="ktm-tl__item is-left" data-id="ev-5mqco781pd" data-cat="cat-c3ajlv81pd" data-search="touchscreen smartphones go mainstream pocket-sized computers with touchscreens, apps and mobile internet become part of daily life. 2007 personal &amp; connected" style="--cat:#16A34A"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-5mqco781pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 9 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date" datetime="2007">2007</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#16A34A"></span>Personal &amp; connected</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-5mqco781pd">Touchscreen smartphones go mainstream</h3><div class="ktm-tl__desc"><p>Pocket-sized computers with touchscreens, apps and mobile internet become part of daily life.</p></div></div></article></li><li class="ktm-tl__item is-right" data-id="ev-ovaa1r81pd" data-cat="cat-c3ajlv81pd" data-search="ai assistants for everyone large language models become widely available tools for writing, coding and learning. early 2020s personal &amp; connected" style="--cat:#16A34A"><div class="ktm-tl__rail"><span class="ktm-tl__marker" aria-hidden="true"><span><i class="fa-solid fa-robot" aria-hidden="true"></i></span></span></div><article class="ktm-tl__card ktm-tl__vcard" aria-labelledby="ktm-t-ev-ovaa1r81pd"><div class="ktm-tl__content"><span class="ktm-tl__sr">Event 10 of 10. </span><p class="ktm-tl__meta"><time class="ktm-tl__date">Early 2020s</time><span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:#16A34A"></span>Personal &amp; connected</span></p><h3 class="ktm-tl__title" id="ktm-t-ev-ovaa1r81pd">AI assistants for everyone</h3><div class="ktm-tl__desc"><p>Large language models become widely available tools for writing, coding and learning.</p></div></div></article></li></ol><p class="ktm-tl__empty" hidden>No events match your search.</p></div><div class="ktm-tl__modal" hidden><div class="ktm-tl__backdrop" data-close></div><div class="ktm-tl__dialog" role="dialog" aria-modal="true" tabindex="-1"><button type="button" class="ktm-tl__close" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button><div class="ktm-tl__mbody"></div></div></div></main>
+<script id="ktm-timeline-data" type="application/json">{"schema":"ktm-timeline","version":1,"id":"tl-8mf49d81pd","name":"History of Computers","createdAt":"2026-11-24T05:56:41.761Z","updatedAt":"2026-11-24T05:56:41.761Z","meta":{"title":"The History of Computers","subtitle":"From mechanical calculators to everyday AI","showHeader":true,"lang":"en"},"layout":{"type":"alternating","alternating":{"arrangement":"alternate","startSide":"left"},"single":{"linePosition":"left"},"horizontal":{"cardWidth":300,"snap":true},"cards":{"columns":3,"connectors":true},"roadmap":{"path":"curved","perRow":3,"showProgress":true,"progress":2},"compact":{"showDescriptions":true}},"design":{"typography":{"family":"Poppins","baseSize":16,"heading":{"family":"inherit","size":34,"weight":700,"color":"#232450","lineHeight":1.2,"align":"center"},"title":{"family":"inherit","size":19,"weight":600,"color":"#232450","lineHeight":1.3,"align":"left"},"date":{"family":"inherit","size":13,"weight":600,"color":"#232450","lineHeight":1.4,"align":"left","transform":"none"},"description":{"family":"inherit","size":15,"weight":400,"color":"#4A4D6A","lineHeight":1.6,"align":"left"}},"colors":{"bgType":"solid","background":"#F8F9FB","gradFrom":"#F8F9FB","gradTo":"#E8EAF6","gradAngle":180,"line":"#232450","marker":"#FEDC69","markerIcon":"#232450","markerBorder":"#232450","cardBg":"#FFFFFF","cardOpacity":100,"border":"#E3E5EE","dateBg":"#FEDC69","accent":"#232450","highlight":"#FEDC69","progress":"#232450","focus":"#232450"},"structure":{"lineWidth":3,"lineStyle":"solid","markerShape":"circle","markerSize":40,"markerBorderWidth":2,"markerContent":"icon","connector":"arrow","datePosition":"card","dateStyle":"pill","titleIcon":false},"cards":{"radius":14,"borderWidth":1,"shadow":"md","padding":22,"hover":"lift","categoryAccent":false,"imagePosition":"top","imageHeight":180,"imageFit":"cover"},"dims":{"maxWidth":1100,"fullWidth":false,"align":"center","cardGap":32,"sectionPadding":48},"responsive":{"breakpoint":680,"mobileScale":0.92,"mobileHorizontal":"scroll","hideImagesMobile":false},"animation":{"enabled":true,"type":"slide-up","duration":600,"delay":0,"stagger":90,"drawLine":true,"markers":true,"scrollReveal":true},"interaction":{"mode":"always","lightbox":true,"search":true,"filter":true,"expandAll":true},"advanced":{"dateFormat":"long","locale":"en-GB","showCount":true,"autoHeight":false}},"categories":[{"id":"cat-sbcgxq81pd","name":"Mechanical era","color":"#8C5A3C"},{"id":"cat-cj9bb281pd","name":"Electronic era","color":"#2563EB"},{"id":"cat-c3ajlv81pd","name":"Personal & connected","color":"#16A34A"}],"events":[{"id":"ev-h3pr6681pd","date":{"type":"year","start":"1822","end":"","label":"","sortYear":""},"title":"Difference Engine proposed","description":"Charles Babbage designs a mechanical calculator to compute and print mathematical tables without human error.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-gears","categoryId":"cat-sbcgxq81pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":0},{"id":"ev-fjpe5k81pd","date":{"type":"year","start":"1843","end":"","label":"","sortYear":""},"title":"Ada Lovelace publishes her Notes","description":"Lovelace's notes on the Analytical Engine include a method for calculating Bernoulli numbers, widely regarded as the first published computer program.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-feather","categoryId":"cat-sbcgxq81pd","link":{"url":"","label":""},"highlight":true,"media":{"type":"none","url":"","caption":""},"order":1},{"id":"ev-9q26uf81pd","date":{"type":"year","start":"1936","end":"","label":"","sortYear":""},"title":"Turing describes the universal machine","description":"Alan Turing's paper \"On Computable Numbers\" sets out an abstract machine that defines what can be computed.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-brain","categoryId":"cat-cj9bb281pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":2},{"id":"ev-sw2sv381pd","date":{"type":"year","start":"1946","end":"","label":"","sortYear":""},"title":"ENIAC unveiled","description":"One of the first general-purpose electronic computers is presented to the public at the University of Pennsylvania. It filled a large room and used about 18,000 vacuum tubes.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-server","categoryId":"cat-cj9bb281pd","link":{"url":"","label":""},"highlight":true,"media":{"type":"none","url":"","caption":""},"order":3},{"id":"ev-afnvxl81pd","date":{"type":"year","start":"1947","end":"","label":"","sortYear":""},"title":"The transistor","description":"Researchers at Bell Labs demonstrate the transistor, which later replaces bulky vacuum tubes and makes smaller computers possible.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-microchip","categoryId":"cat-cj9bb281pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":4},{"id":"ev-8mztga81pd","date":{"type":"year","start":"1971","end":"","label":"","sortYear":""},"title":"First commercial microprocessor","description":"Intel releases the 4004, placing a complete central processing unit on a single chip.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-microchip","categoryId":"cat-cj9bb281pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":5},{"id":"ev-wj7rgt81pd","date":{"type":"year","start":"1981","end":"","label":"","sortYear":""},"title":"The IBM Personal Computer","description":"The IBM PC brings computers into offices and homes and sets a standard many manufacturers follow.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-desktop","categoryId":"cat-c3ajlv81pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":6},{"id":"ev-h624tz81pd","date":{"type":"range","start":"1989","end":"1991","label":"","sortYear":""},"title":"The World Wide Web","description":"Tim Berners-Lee proposes the Web in 1989 at CERN; the first website goes online in 1991.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-globe","categoryId":"cat-c3ajlv81pd","link":{"url":"","label":""},"highlight":true,"media":{"type":"none","url":"","caption":""},"order":7},{"id":"ev-5mqco781pd","date":{"type":"year","start":"2007","end":"","label":"","sortYear":""},"title":"Touchscreen smartphones go mainstream","description":"Pocket-sized computers with touchscreens, apps and mobile internet become part of daily life.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-mobile-screen","categoryId":"cat-c3ajlv81pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":8},{"id":"ev-ovaa1r81pd","date":{"type":"label","start":"","end":"","label":"Early 2020s","sortYear":"2022"},"title":"AI assistants for everyone","description":"Large language models become widely available tools for writing, coding and learning.","image":{"url":"","alt":"","caption":""},"icon":"fa-solid fa-robot","categoryId":"cat-c3ajlv81pd","link":{"url":"","label":""},"highlight":false,"media":{"type":"none","url":"","caption":""},"order":9}]}</script>
+<script>/*! KTM EduTech Timeline runtime v1.0.0 — renders a KTM timeline project. No dependencies (Font Awesome optional, for event icons). */
+(function (w) {
+  'use strict';
+  var RT_VERSION = '1.0.0';
+  var doc = w.document;
+
+  /* ---------- utilities ---------- */
+  var ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return ESC[c]; }); }
+  function safeUrl(u, kind) {
+    u = String(u || '').trim();
+    if (!u) return '';
+    if (kind === 'image' && /^data:image\/(png|jpe?g|gif|webp|avif|svg\+xml);base64,[a-z0-9+\/=\s]+$/i.test(u)) return u;
+    if (/^https?:\/\/[^\s<>"]+$/i.test(u)) return u;
+    if (kind === 'link' && /^(mailto:|tel:)[^\s<>"]+$/i.test(u)) return u;
+    if (kind === 'link' && /^#[\w-]*$/.test(u)) return u;
+    if (!/^[a-z][a-z0-9+.\-]*:/i.test(u) && !/^\/\//.test(u) && !/[\s<>"]/.test(u)) return u; // relative path
+    return '';
+  }
+  function safeIcon(c) { c = String(c || '').trim(); return /^[a-z0-9 \-]{1,80}$/i.test(c) ? c : ''; }
+  function youtubeId(url) {
+    url = String(url || '');
+    var m = url.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/))([\w-]{11})/i);
+    return m ? m[1] : '';
+  }
+  function hexRgb(h) {
+    h = String(h || '').replace('#', '');
+    if (h.length === 3 || h.length === 4) h = h.split('').map(function (c) { return c + c; }).join('');
+    if (!/^[0-9a-f]{6}/i.test(h)) return null;
+    return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+  }
+  function rgba(h, a) { var c = hexRgb(h); return c ? 'rgba(' + c.join(',') + ',' + a + ')' : h; }
+  function lum(h) {
+    var c = hexRgb(h); if (!c) return 1;
+    var v = c.map(function (x) { x /= 255; return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4); });
+    return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2];
+  }
+  function inkFor(h) { return lum(h) > 0.4 ? '#14152e' : '#ffffff'; }
+
+  /* ---------- fonts ---------- */
+  var FONTS = {
+    'Poppins': '300;400;500;600;700;800', 'Inter': '300;400;500;600;700;800', 'Roboto': '300;400;500;700',
+    'Open Sans': '300;400;500;600;700;800', 'Lato': '300;400;700;900', 'Montserrat': '300;400;500;600;700;800',
+    'Nunito': '300;400;500;600;700;800', 'Raleway': '300;400;500;600;700;800', 'DM Sans': '300;400;500;600;700',
+    'Space Grotesk': '300;400;500;600;700', 'Lexend': '300;400;500;600;700;800', 'Atkinson Hyperlegible': '400;700',
+    'Quicksand': '300;400;500;600;700', 'Fredoka': '300;400;500;600;700', 'Baloo 2': '400;500;600;700;800',
+    'Comic Neue': '300;400;700', 'Oswald': '300;400;500;600;700', 'Merriweather': '300;400;700;900',
+    'Playfair Display': '400;500;600;700;800', 'Lora': '400;500;600;700', 'Source Serif 4': '300;400;600;700',
+    'Libre Baskerville': '400;700', 'Noto Sans Thai': '300;400;500;600;700;800', 'Sarabun': '300;400;500;600;700;800',
+    'Courier Prime': '400;700'
+  };
+  var SERIF = /Merriweather|Playfair|Lora|Serif|Baskerville|Garamond|Crimson|Courier/i;
+  function cleanFont(f) { return String(f || '').replace(/[^\w \-]/g, '').trim().slice(0, 60); }
+  function fontStack(f) {
+    f = cleanFont(f);
+    if (!f || f === 'System UI') return 'system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif';
+    return '"' + f + '",' + (SERIF.test(f) ? 'Georgia,"Times New Roman",serif' : 'system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif');
+  }
+  function fontsUsed(D) {
+    var t = D.typography, set = {};
+    [t.family, t.heading.family, t.title.family, t.date.family, t.description.family].forEach(function (f) {
+      f = cleanFont(f); if (f && f !== 'inherit' && f !== 'System UI') set[f] = 1;
+    });
+    return Object.keys(set);
+  }
+  function fontsHref(D) {
+    var fams = fontsUsed(D); if (!fams.length) return '';
+    return 'https://fonts.googleapis.com/css2?' + fams.map(function (f) {
+      var wts = FONTS[f];
+      return 'family=' + encodeURIComponent(f).replace(/%20/g, '+') + (wts ? ':wght@' + wts : '');
+    }).join('&') + '&display=swap';
+  }
+  function ensureFonts(D) {
+    var href = fontsHref(D), el = doc.getElementById('ktm-tl-fonts');
+    if (!href) { if (el) el.remove(); return; }
+    if (!el) { el = doc.createElement('link'); el.id = 'ktm-tl-fonts'; el.rel = 'stylesheet'; doc.head.appendChild(el); }
+    if (el.getAttribute('href') !== href) el.setAttribute('href', href);
+  }
+
+  /* ---------- dates ---------- */
+  var MONTHS_FALLBACK = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function parseDate(s) {
+    s = String(s == null ? '' : s).trim();
+    var m = s.match(/^(-?\d{1,6})(?:-(\d{1,2})(?:-(\d{1,2}))?)?$/);
+    if (!m) return null;
+    var y = parseInt(m[1], 10), mo = m[2] ? parseInt(m[2], 10) : null, d = m[3] ? parseInt(m[3], 10) : null;
+    if (mo !== null && (mo < 1 || mo > 12)) return null;
+    if (d !== null && (d < 1 || d > 31)) return null;
+    return { y: y, m: mo, d: d };
+  }
+  function sortKey(ev) {
+    var dt = ev.date || {};
+    if (dt.type === 'label') {
+      var n = parseFloat(dt.sortYear);
+      if (isFinite(n)) return n;
+    }
+    var p = parseDate(dt.start);
+    if (!p) return Infinity;
+    return p.y + ((p.m || 1) - 1) / 12 + ((p.d || 1) - 1) / 400;
+  }
+  function yearText(y) { return y < 0 ? (-y) + ' BCE' : String(y); }
+  function fmtPart(p, fmt, locale) {
+    if (!p) return '';
+    if (fmt === 'year' || p.m === null) return yearText(p.y);
+    if (fmt === 'numeric') {
+      var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+      return (p.y < 0 ? '-' : '') + String(Math.abs(p.y)).padStart(4, '0') + '-' + pad(p.m) + (p.d ? '-' + pad(p.d) : '');
+    }
+    if (p.y < 100) { // Intl struggles with very early years
+      return (p.d ? p.d + ' ' : '') + MONTHS_FALLBACK[p.m - 1] + ' ' + yearText(p.y);
+    }
+    try {
+      var dt = new Date(Date.UTC(2000, p.m - 1, p.d || 1)); dt.setUTCFullYear(p.y);
+      var o = { timeZone: 'UTC', year: 'numeric', month: fmt === 'long' ? 'long' : 'short' };
+      if (p.d) o.day = 'numeric';
+      return new Intl.DateTimeFormat(locale || 'en-GB', o).format(dt);
+    } catch (e) { return (p.d ? p.d + ' ' : '') + MONTHS_FALLBACK[p.m - 1] + ' ' + p.y; }
+  }
+  function formatDate(ev, fmt, locale) {
+    var dt = ev.date || {}, s = parseDate(dt.start), e = parseDate(dt.end);
+    if (dt.type === 'label') return String(dt.label || dt.start || '');
+    if (dt.type === 'range') {
+      var a = s ? fmtPart(s, fmt, locale) : String(dt.start || '');
+      var b = e ? fmtPart(e, fmt, locale) : (dt.end ? String(dt.end) : 'present');
+      return a + ' – ' + b;
+    }
+    if (dt.type === 'year') return s ? yearText(s.y) : String(dt.start || '');
+    return s ? fmtPart(s, fmt, locale) : String(dt.start || '');
+  }
+  function isoAttr(ev) {
+    var dt = ev.date || {}, p = parseDate(dt.start);
+    if (!p || p.y < 0 || p.y > 9999 || dt.type === 'label') return '';
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    return String(p.y).padStart(4, '0') + (p.m ? '-' + pad(p.m) + (p.d ? '-' + pad(p.d) : '') : '');
+  }
+
+  /* ---------- icons (UI chrome uses inline SVG so it works without Font Awesome) ---------- */
+  var SVG = {
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+    close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>',
+    left: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg>',
+    right: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg>',
+    ext: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
+    play: '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="1" y="4" width="22" height="16" rx="5" fill="currentColor"/><path d="M10 8.5v7l6-3.5z" fill="#fff"/></svg>',
+    star: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="m12 2 3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></svg>',
+    img: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 17-5-5-9 8"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg>'
+  };
+
+  /* ---------- CSS variables ---------- */
+  var SHADOWS = {
+    none: ['none', '0 6px 16px rgba(16,18,40,.10)'],
+    sm: ['0 1px 3px rgba(16,18,40,.08),0 1px 2px rgba(16,18,40,.06)', '0 8px 20px rgba(16,18,40,.12)'],
+    md: ['0 6px 18px rgba(16,18,40,.08),0 2px 6px rgba(16,18,40,.05)', '0 14px 32px rgba(16,18,40,.14)'],
+    lg: ['0 18px 40px rgba(16,18,40,.14),0 4px 12px rgba(16,18,40,.08)', '0 24px 52px rgba(16,18,40,.2)']
+  };
+  function fam(f) { return (!f || f === 'inherit') ? 'var(--tl-font)' : fontStack(f); }
+  function vars(D, st) {
+    var t = D.typography, c = D.colors, s = D.structure, k = D.cards, m = D.dims, a = D.animation, r = D.responsive;
+    var bg = c.bgType === 'gradient' ? 'linear-gradient(' + c.gradAngle + 'deg,' + c.gradFrom + ',' + c.gradTo + ')' : (c.bgType === 'transparent' ? 'transparent' : c.background);
+    var bgSolid = c.bgType === 'gradient' ? c.gradFrom : (c.bgType === 'transparent' ? c.cardBg : c.background);
+    var sh = SHADOWS[k.shadow] || SHADOWS.md;
+    var v = {
+      '--tl-bg': bg, '--tl-bg-solid': bgSolid, '--tl-font': fontStack(t.family), '--tl-base': t.baseSize + 'px',
+      '--tl-line': c.line, '--tl-lw': s.lineWidth + 'px', '--tl-ls': s.lineStyle,
+      '--tl-marker': c.marker, '--tl-marker-ink': c.markerIcon, '--tl-marker-border': c.markerBorder, '--tl-mbw': s.markerBorderWidth + 'px',
+      '--tl-ms': s.markerSize + 'px', '--tl-ms-c': Math.max(14, Math.round(s.markerSize * 0.55)) + 'px',
+      '--tl-card-bg': rgba(c.cardBg, (c.cardOpacity / 100).toFixed(2)), '--tl-card-solid': c.cardBg, '--tl-border': c.border,
+      '--tl-bw': k.borderWidth + 'px', '--tl-radius': k.radius + 'px', '--tl-pad': k.padding + 'px',
+      '--tl-shadow': sh[0], '--tl-shadow-hover': sh[1],
+      '--tl-accent': c.accent, '--tl-accent-ink': inkFor(c.accent), '--tl-accent-text': c.accent, '--tl-accent-soft': rgba(c.accent, 0.25),
+      '--tl-hl': c.highlight, '--tl-hl-ink': inkFor(c.highlight), '--tl-prog': c.progress, '--tl-prog-ink': inkFor(c.progress),
+      '--tl-date-bg': c.dateBg, '--tl-focus': c.focus || c.accent,
+      '--tl-gap': m.cardGap + 'px', '--tl-section': m.sectionPadding + 'px', '--tl-maxw': m.maxWidth + 'px',
+      '--tl-img-h': k.imageHeight + 'px', '--tl-img-h-side': Math.round(k.imageHeight * 0.8) + 'px', '--tl-img-fit': k.imageFit,
+      '--tl-dur': a.duration + 'ms', '--tl-delay': a.delay + 'ms', '--tl-stagger': a.stagger + 'ms',
+      '--tl-mscale': r.mobileScale, '--tl-hcw': (st && st.narrow ? Math.min(st.P.layout.horizontal.cardWidth, 260) : st ? st.P.layout.horizontal.cardWidth : 300) + 'px',
+      '--tl-datecol': '7.2em', '--tl-cols': (st ? st.P.layout.cards.columns : 3)
+    };
+    ['heading', 'title', 'date', 'description'].forEach(function (el) {
+      var x = t[el], p = '--tl-' + (el === 'description' ? 'desc' : el);
+      v[p + '-ff'] = fam(x.family); v[p + '-fs'] = x.size + 'px'; v[p + '-fw'] = x.weight;
+      v[p + '-c'] = x.color; v[p + '-lh'] = x.lineHeight; v[p + '-ta'] = x.align;
+    });
+    v['--tl-date-tt'] = t.date.transform || 'none';
+    return Object.keys(v).map(function (key) { return key + ':' + v[key]; }).join(';');
+  }
+
+  /* ---------- markup ---------- */
+  function paragraphs(text) {
+    var t = String(text || '').trim(); if (!t) return '';
+    return t.split(/\n{2,}/).map(function (p) { return '<p>' + esc(p).replace(/\n/g, '<br>') + '</p>'; }).join('');
+  }
+  function plain(text, n) { var t = String(text || '').replace(/\s+/g, ' ').trim(); return t.length > n ? t.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : t; }
+  function catOf(P, id) { for (var i = 0; i < P.categories.length; i++) if (P.categories[i].id === id) return P.categories[i]; return null; }
+  function timeTag(ev, P, extra) {
+    var iso = isoAttr(ev), txt = formatDate(ev, P.design.advanced.dateFormat, P.design.advanced.locale);
+    if (!txt) return '';
+    return '<time class="ktm-tl__date' + (extra || '') + '"' + (iso ? ' datetime="' + iso + '"' : '') + '>' + esc(txt) + '</time>';
+  }
+  function markerHTML(ev, i, P) {
+    var s = P.design.structure, inner = '';
+    if (s.markerContent === 'number') inner = String(i + 1);
+    else if (s.markerContent === 'icon') { var ic = safeIcon(ev.icon); inner = ic ? '<i class="' + esc(ic) + '" aria-hidden="true"></i>' : ''; }
+    return '<span class="ktm-tl__marker" aria-hidden="true"><span>' + inner + '</span></span>';
+  }
+  function imageHTML(ev, P, big) {
+    var src = safeUrl(ev.image && ev.image.url, 'image'); if (!src) return '';
+    var alt = ev.image.alt || '';
+    var img = '<img class="ktm-tl__img" src="' + esc(src) + '" alt="' + esc(alt) + '" loading="lazy" decoding="async">';
+    if (!big && P.design.interaction.lightbox) img = '<button type="button" class="ktm-tl__imgbtn" data-lightbox="' + esc(ev.id) + '" aria-label="Enlarge image' + (alt ? ': ' + esc(alt) : '') + '">' + img + '</button>';
+    var cap = ev.image.caption ? '<figcaption class="ktm-tl__cap">' + esc(ev.image.caption) + '</figcaption>' : '';
+    return '<figure class="ktm-tl__media">' + img + cap + '</figure>';
+  }
+  function mediaHTML(ev, inModal) {
+    var m = ev.media || {}, cap = m.caption ? '<p class="ktm-tl__mcap">' + esc(m.caption) + '</p>' : '';
+    if (m.type === 'youtube') {
+      var id = youtubeId(m.url); if (!id) return '';
+      if (inModal) return '<div class="ktm-tl__frame"><iframe src="https://www.youtube-nocookie.com/embed/' + id + '" title="' + esc(m.caption || ev.title || 'Video') + '" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>' + cap;
+      return '<button type="button" class="ktm-tl__video" data-video="' + id + '" data-title="' + esc(m.caption || ev.title || 'Video') + '">' + SVG.play + '<span>Play video' + (m.caption ? ': ' + esc(m.caption) : '') + '</span></button>';
+    }
+    if (m.type === 'audio') {
+      var src = safeUrl(m.url, 'link'); if (!src || !/^https?:/i.test(src) && !/^[^:]+$/.test(src)) return '';
+      return '<audio class="ktm-tl__audio" controls preload="none" src="' + esc(src) + '"' + (m.caption ? ' aria-label="' + esc(m.caption) + '"' : '') + '></audio>' + cap;
+    }
+    return '';
+  }
+  function linkHTML(ev) {
+    var href = safeUrl(ev.link && ev.link.url, 'link'); if (!href) return '';
+    var label = ev.link.label || 'Learn more', ext = /^https?:/i.test(href);
+    return '<a class="ktm-tl__link" href="' + esc(href) + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' + esc(label) + (ext ? SVG.ext + '<span class="ktm-tl__sr"> (opens in a new tab)</span>' : '') + '</a>';
+  }
+  function cardHTML(ev, i, n, P, st, opts) {
+    var D = P.design, mode = D.interaction.mode, cat = catOf(P, ev.categoryId), id = esc(ev.id);
+    var showDateIn = D.structure.datePosition === 'card' && !opts.dateOut;
+    var meta = (showDateIn ? timeTag(ev, P) : '') +
+      (cat ? '<span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:' + esc(cat.color) + '"></span>' + esc(cat.name) + '</span>' : '') +
+      (ev.highlight ? '<span class="ktm-tl__badge">' + SVG.star + 'Key milestone</span>' : '') + (opts.state || '');
+    var icon = D.structure.titleIcon && safeIcon(ev.icon) ? '<i class="' + esc(safeIcon(ev.icon)) + '" aria-hidden="true"></i>' : '';
+    var title = '<h3 class="ktm-tl__title" id="ktm-t-' + id + '">' + icon + esc(ev.title || 'Untitled event') + '</h3>';
+    var desc = paragraphs(ev.description), extras = mediaHTML(ev, false) + linkHTML(ev), body = '';
+    var compactNoDesc = st.lay === 'compact' && !P.layout.compact.showDescriptions;
+    if (compactNoDesc) { desc = ''; }
+    var full = (desc ? '<div class="ktm-tl__desc">' + desc + '</div>' : '') + (extras ? '<div class="ktm-tl__extras">' + extras + '</div>' : '');
+    if (!full) body = '';
+    else if (mode === 'expand' && !st.capture) {
+      var open = !!st.expanded[ev.id];
+      body = '<button type="button" class="ktm-tl__btn ktm-tl__toggle" aria-expanded="' + open + '" aria-controls="ktm-d-' + id + '"><span>' + (open ? 'Show less' : 'Read more') + '</span>' + SVG.down + '</button>' +
+        '<div class="ktm-tl__more" id="ktm-d-' + id + '"' + (open ? '' : ' hidden') + '>' + full + '</div>';
+    } else if (mode === 'modal' && !st.capture) {
+      body = (desc ? '<p class="ktm-tl__excerpt">' + esc(plain(ev.description, 110)) + '</p>' : '') +
+        '<button type="button" class="ktm-tl__btn" data-open="' + id + '" aria-haspopup="dialog">View details' + SVG.right + '</button>';
+    } else if (mode === 'hover' && !st.capture) {
+      body = '<span class="ktm-tl__hint" aria-hidden="true">Hover or tap for details</span><div class="ktm-tl__hoverdesc">' + full + '</div>';
+    } else body = full;
+    var img = D.cards.imagePosition !== 'none' ? imageHTML(ev, P) : '';
+    var sr = '<span class="ktm-tl__sr">Event ' + (i + 1) + ' of ' + n + (opts.dateOut || !showDateIn ? ', ' + esc(formatDate(ev, D.advanced.dateFormat, D.advanced.locale)) : '') + '. </span>';
+    return '<article class="ktm-tl__card' + (opts.vcard ? ' ktm-tl__vcard' : '') + (img ? ' has-img' : '') + '"' + (mode === 'hover' ? ' tabindex="0"' : '') + ' aria-labelledby="ktm-t-' + id + '">' +
+      img + '<div class="ktm-tl__content">' + sr + (meta ? '<p class="ktm-tl__meta">' + meta + '</p>' : '') + title + body + '</div></article>';
+  }
+  function searchText(ev, P) {
+    var cat = catOf(P, ev.categoryId);
+    return (ev.title + ' ' + ev.description + ' ' + formatDate(ev, P.design.advanced.dateFormat, P.design.advanced.locale) + ' ' + (cat ? cat.name : '')).toLowerCase().replace(/\s+/g, ' ');
+  }
+  function itemOpen(ev, i, n, P, extraCls) {
+    var cat = catOf(P, ev.categoryId);
+    return '<li class="ktm-tl__item' + (ev.highlight ? ' is-hl' : '') + (extraCls || '') + '" data-id="' + esc(ev.id) + '" data-cat="' + esc(ev.categoryId || '') + '" data-search="' + esc(searchText(ev, P)) + '"' + (cat ? ' style="--cat:' + esc(cat.color) + '"' : '') + '>';
+  }
+
+  function bodyHTML(P, st) {
+    var evs = P.events, n = evs.length, D = P.design, lay = st.lay, out = D.structure.datePosition === 'line';
+    if (!n) return '<div class="ktm-tl__empty">No events yet.</div>';
+    if (lay === 'horizontal') {
+      return '<div class="ktm-tl__h"><div class="ktm-tl__hscroll" tabindex="0" role="region" aria-label="' + esc(P.meta.title || 'Timeline') + ' — scroll sideways to see more events"><ol class="ktm-tl__hlist">' +
+        evs.map(function (ev, i) {
+          return itemOpen(ev, i, n, P) + '<div class="ktm-tl__htop">' + (out ? timeTag(ev, P) : '') + '</div><div class="ktm-tl__hrail">' + markerHTML(ev, i, P) + '</div>' + cardHTML(ev, i, n, P, st, { dateOut: out }) + '</li>';
+        }).join('') + '</ol></div><div class="ktm-tl__hnav"><button type="button" data-hnav="-1" aria-label="Previous events">' + SVG.left + '</button><span aria-live="polite"></span><button type="button" data-hnav="1" aria-label="Next events">' + SVG.right + '</button></div></div>';
+    }
+    if (lay === 'cards') {
+      return '<ol class="ktm-tl__grid">' + evs.map(function (ev, i) {
+        return itemOpen(ev, i, n, P) + '<div class="ktm-tl__chead">' + markerHTML(ev, i, P) + (out ? '<div class="ktm-tl__dateout">' + timeTag(ev, P) + '</div>' : '') + '</div>' + cardHTML(ev, i, n, P, st, { dateOut: out }) + '</li>';
+      }).join('') + '</ol>';
+    }
+    if (lay === 'roadmap') {
+      var R = P.layout.roadmap, prog = R.showProgress ? Math.max(0, Math.min(n, R.progress)) : -1;
+      var head = R.showProgress ? '<div class="ktm-tl__progress"><span>' + prog + ' of ' + n + ' milestones complete</span><span class="ktm-tl__pbar" aria-hidden="true"><span style="width:' + Math.round(prog / n * 100) + '%"></span></span></div>' : '';
+      return head + '<div class="ktm-tl__road"><svg class="ktm-tl__roadsvg" aria-hidden="true" focusable="false"><path class="base" d=""/><path class="prog" d=""/></svg><ol class="ktm-tl__rgrid">' + evs.map(function (ev, i) {
+        var done = R.showProgress && i < prog;
+        var state = R.showProgress ? '<span class="ktm-tl__state' + (done ? ' is-done' : '') + '">' + (done ? SVG.check + 'Done' : 'Planned') + '</span>' : '';
+        return itemOpen(ev, i, n, P, done ? ' is-done' : '') + '<div class="ktm-tl__rhead">' + markerHTML(ev, i, P) + (out ? '<div class="ktm-tl__dateout">' + timeTag(ev, P) + '</div>' : '') + '</div>' + cardHTML(ev, i, n, P, st, { dateOut: out, state: state }) + '</li>';
+      }).join('') + '</ol></div>';
+    }
+    // vertical layouts: alternating, single, compact
+    var A = P.layout.alternating, compact = lay === 'compact', useOut = out || compact;
+    return '<ol class="ktm-tl__list">' + evs.map(function (ev, i) {
+      var side = '';
+      if (lay === 'alternating') {
+        if (A.arrangement === 'left') side = ' is-left';
+        else if (A.arrangement === 'right') side = ' is-right';
+        else side = ((i % 2 === 0) === (A.startSide === 'left')) ? ' is-left' : ' is-right';
+      }
+      return itemOpen(ev, i, n, P, side + (useOut ? ' has-dateout' : '')) + '<div class="ktm-tl__rail">' + markerHTML(ev, i, P) + '</div>' +
+        (useOut ? '<div class="ktm-tl__dateout">' + timeTag(ev, P) + '</div>' : '') + cardHTML(ev, i, n, P, st, { dateOut: useOut, vcard: true }) + '</li>';
+    }).join('') + '</ol>';
+  }
+
+  function build(P, st) {
+    var D = P.design, I = D.interaction, h = '';
+    h += '<div class="ktm-tl__inner">';
+    if (P.meta.showHeader && (P.meta.title || P.meta.subtitle)) {
+      h += '<header class="ktm-tl__header">' + (P.meta.title ? '<h2 class="ktm-tl__heading">' + esc(P.meta.title) + '</h2>' : '') + (P.meta.subtitle ? '<p class="ktm-tl__sub">' + esc(P.meta.subtitle) + '</p>' : '') + '</header>';
+    }
+    var cats = P.categories.filter(function (c) { return P.events.some(function (e) { return e.categoryId === c.id; }); });
+    var tools = '';
+    if (I.search && P.events.length) tools += '<div class="ktm-tl__searchwrap">' + SVG.search + '<label class="ktm-tl__sr" for="ktm-s-' + st.uid + '">Search events</label><input type="search" id="ktm-s-' + st.uid + '" class="ktm-tl__search" placeholder="Search events" autocomplete="off" value="' + esc(st.q) + '"></div>';
+    if (I.filter && cats.length > 1) {
+      tools += '<div class="ktm-tl__filters" role="group" aria-label="Filter by category"><button type="button" class="ktm-tl__chip" data-cat="" aria-pressed="' + (!st.cat) + '">All</button>' + cats.map(function (c) {
+        return '<button type="button" class="ktm-tl__chip" data-cat="' + esc(c.id) + '" aria-pressed="' + (st.cat === c.id) + '"><span class="ktm-tl__dot" style="--c:' + esc(c.color) + '"></span>' + esc(c.name) + '</button>';
+      }).join('') + '</div>';
+    }
+    if (I.mode === 'expand' && I.expandAll && P.events.length > 1 && !st.capture) tools += '<button type="button" class="ktm-tl__tbtn" data-expand-all>Expand all</button>';
+    if (tools) h += '<div class="ktm-tl__toolbar">' + tools + '</div>';
+    if (D.advanced.showCount && P.events.length) h += '<p class="ktm-tl__status" aria-live="polite"></p>';
+    h += bodyHTML(P, st);
+    h += '<p class="ktm-tl__empty" hidden>No events match your search.</p></div>';
+    h += '<div class="ktm-tl__modal" hidden><div class="ktm-tl__backdrop" data-close></div><div class="ktm-tl__dialog" role="dialog" aria-modal="true" tabindex="-1"><button type="button" class="ktm-tl__close" data-close aria-label="Close">' + SVG.close + '</button><div class="ktm-tl__mbody"></div></div></div>';
+    return h;
+  }
+
+  function rootClasses(P, st) {
+    var D = P.design, s = D.structure, k = D.cards, a = D.animation;
+    var c = ['ktm-tl', 'ktm-tl--' + st.lay, 'mk-' + s.markerShape, 'mc-' + s.markerContent, 'conn-' + s.connector, 'date-' + s.dateStyle,
+      'hover-' + k.hover, 'img-' + k.imagePosition, 'mode-' + D.interaction.mode];
+    if (D.dims.fullWidth) c.push('is-full');
+    if (D.dims.align === 'left') c.push('align-left');
+    if (st.narrow) c.push('is-narrow');
+    if (k.categoryAccent) c.push('cat-accent');
+    if (D.responsive.hideImagesMobile) c.push('hide-img-m');
+    if (P.layout.single.linePosition === 'center') c.push('line-center');
+    if (P.layout.horizontal.snap) c.push('h-snap');
+    if (P.layout.cards.connectors) c.push('cards-conn');
+    if (st.lay === 'roadmap' && P.layout.roadmap.showProgress) c.push('has-progress');
+    if (st.anim) { c.push('has-anim', 'an-' + a.type); if (a.drawLine) c.push('an-line'); if (a.markers) c.push('an-marker'); }
+    if (st.capture) { c.push('is-capture'); if (!st.captureTools) c.push('cap-notools'); }
+    return c.join(' ');
+  }
+
+  /* ---------- post-render layout ---------- */
+  function visibleItems(root) { return Array.prototype.filter.call(root.querySelectorAll('.ktm-tl__item'), function (li) { return !li.hidden; }); }
+  function layoutAfter(root, st) {
+    var P = st.P, lay = st.lay, vis = visibleItems(root);
+    vis.forEach(function (li, i) { li.classList.toggle('is-first', i === 0); li.classList.toggle('is-last', i === vis.length - 1); });
+    if (lay === 'alternating' && P.layout.alternating.arrangement === 'alternate') {
+      vis.forEach(function (li, i) {
+        var left = (i % 2 === 0) === (P.layout.alternating.startSide === 'left');
+        li.classList.toggle('is-left', left); li.classList.toggle('is-right', !left);
+      });
+    }
+    if (lay === 'cards') {
+      var grid = root.querySelector('.ktm-tl__grid'); if (!grid) return;
+      var gw = grid.clientWidth, gap = P.design.dims.cardGap, cols = Math.max(1, Math.min(P.layout.cards.columns, Math.floor((gw + gap) / (230 + gap)) || 1));
+      grid.style.setProperty('--tl-cols-eff', cols);
+      vis.forEach(function (li, i) { li.classList.toggle('row-end', (i + 1) % cols === 0); });
+    }
+    if (lay === 'roadmap') roadmapLayout(root, st, vis);
+    if (lay === 'horizontal') hnavUpdate(root);
+    postHeight(st);
+  }
+  function roadmapLayout(root, st, vis) {
+    var road = root.querySelector('.ktm-tl__road'), grid = root.querySelector('.ktm-tl__rgrid'); if (!road || !grid) return;
+    var R = st.P.layout.roadmap, gap = st.P.design.dims.cardGap;
+    var per = Math.max(1, Math.min(R.perRow, Math.floor((grid.clientWidth + gap) / (210 + gap)) || 1));
+    grid.style.setProperty('--tl-per', per);
+    vis.forEach(function (li, i) {
+      var row = Math.floor(i / per), col = i % per;
+      if (row % 2 === 1) col = per - 1 - col;
+      li.style.gridRow = String(row + 1); li.style.gridColumn = String(col + 1);
+    });
+    var svg = road.querySelector('svg'), base = svg.querySelector('.base'), prog = svg.querySelector('.prog');
+    var rb = road.getBoundingClientRect(), W = road.clientWidth, H = road.clientHeight;
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    var pts = vis.map(function (li) {
+      var m = li.querySelector('.ktm-tl__marker').getBoundingClientRect();
+      return { x: m.left - rb.left + m.width / 2, y: m.top - rb.top + m.height / 2, row: parseInt(li.style.gridRow, 10) - 1 };
+    });
+    if (pts.length < 2) { base.setAttribute('d', ''); prog.setAttribute('d', ''); return; }
+    var style = R.path, segs = [], f = function (n) { return Math.round(n * 10) / 10; };
+    for (var i = 1; i < pts.length; i++) {
+      var a = pts[i - 1], b = pts[i];
+      if (a.row === b.row) {
+        if (style === 'curved') { var mx = (a.x + b.x) / 2, off = (i % 2 ? -1 : 1) * Math.min(22, gap * 0.6); segs.push('Q' + f(mx) + ' ' + f(a.y + off) + ' ' + f(b.x) + ' ' + f(b.y)); }
+        else segs.push('L' + f(b.x) + ' ' + f(b.y));
+      } else {
+        var dir = per === 1 ? (a.row % 2 ? -1 : 1) : (a.x > W / 2 ? 1 : -1);
+        var xo = dir > 0 ? W - 10 : 10;
+        if (style === 'curved') segs.push('C' + f(xo + dir * 6) + ' ' + f(a.y) + ' ' + f(xo + dir * 6) + ' ' + f(b.y) + ' ' + f(b.x) + ' ' + f(b.y));
+        else if (style === 'stepped') segs.push('L' + f(xo) + ' ' + f(a.y) + ' L' + f(xo) + ' ' + f(b.y) + ' L' + f(b.x) + ' ' + f(b.y));
+        else segs.push('L' + f(xo) + ' ' + f((a.y + b.y) / 2) + ' L' + f(b.x) + ' ' + f(b.y));
+      }
+    }
+    var start = 'M' + f(pts[0].x) + ' ' + f(pts[0].y) + ' ';
+    base.setAttribute('d', start + segs.join(' '));
+    var ls = st.P.design.structure.lineStyle, lw = st.P.design.structure.lineWidth * 1.6;
+    var dash = ls === 'dashed' ? (lw * 3) + ' ' + (lw * 2.2) : ls === 'dotted' ? '0.1 ' + (lw * 2.2) : '';
+    [base, prog].forEach(function (p) { if (dash) p.setAttribute('stroke-dasharray', dash); else p.removeAttribute('stroke-dasharray'); p.style.strokeDashoffset = ''; });
+    var k = R.showProgress ? Math.max(0, Math.min(R.progress, pts.length)) : 0;
+    // progress counts by original index of visible items
+    var doneVis = 0; vis.forEach(function (li) { if (li.classList.contains('is-done')) doneVis++; });
+    k = R.showProgress ? doneVis : 0;
+    prog.setAttribute('d', k >= 2 ? start + segs.slice(0, k - 1).join(' ') : '');
+    if (st.anim && st.P.design.animation.drawLine && !dash) {
+      var A = st.P.design.animation;
+      [base, prog].forEach(function (p) {
+        var len = p.getTotalLength ? p.getTotalLength() : 0; if (!len) return;
+        p.style.strokeDasharray = len + ' ' + len;
+        if (!st.roadRevealed) { p.style.transition = 'none'; p.style.strokeDashoffset = len; } else p.style.strokeDashoffset = '0';
+      });
+      if (!st.roadRevealed && !st.roadQueued) {
+        st.roadQueued = true; road.getBoundingClientRect();
+        st.pendingRoad = [function () {
+          st.roadRevealed = true;
+          [base, prog].forEach(function (p) { p.style.transition = 'stroke-dashoffset ' + (A.duration * 3) + 'ms ease ' + A.delay + 'ms'; p.style.strokeDashoffset = '0'; });
+        }];
+      }
+    } else {
+      [base, prog].forEach(function (p) { p.style.transition = ''; p.style.strokeDasharray = ''; p.style.strokeDashoffset = ''; });
+    }
+  }
+  function hnavUpdate(root) {
+    var sc = root.querySelector('.ktm-tl__hscroll'); if (!sc) return;
+    var prev = root.querySelector('[data-hnav="-1"]'), next = root.querySelector('[data-hnav="1"]'), lab = root.querySelector('.ktm-tl__hnav span');
+    var max = sc.scrollWidth - sc.clientWidth - 2;
+    if (prev) prev.disabled = sc.scrollLeft <= 2;
+    if (next) next.disabled = sc.scrollLeft >= max;
+    var nav = root.querySelector('.ktm-tl__hnav'); if (nav) nav.hidden = max <= 0;
+    if (lab) {
+      var vis = visibleItems(root), r = sc.getBoundingClientRect(), first = 0, last = 0;
+      vis.forEach(function (li, i) { var b = li.getBoundingClientRect(); if (b.right > r.left + 8 && b.left < r.right - 8) { if (!first) first = i + 1; last = i + 1; } });
+      lab.textContent = vis.length ? (first + '–' + last + ' of ' + vis.length) : '';
+    }
+  }
+  function postHeight(st) {
+    if (!st.P.design.advanced.autoHeight || w.parent === w) return;
+    var h = Math.ceil(doc.documentElement.scrollHeight);
+    if (h === st.lastPosted) return; st.lastPosted = h;
+    try { w.parent.postMessage({ type: 'ktm-timeline:height', id: st.P.id, height: h }, '*'); } catch (e) { }
+  }
+
+  /* ---------- filtering ---------- */
+  function applyFilter(root, st) {
+    var q = st.q.trim().toLowerCase(), items = root.querySelectorAll('.ktm-tl__item'), shown = 0;
+    Array.prototype.forEach.call(items, function (li) {
+      var ok = (!st.cat || li.getAttribute('data-cat') === st.cat) && (!q || li.getAttribute('data-search').indexOf(q) > -1);
+      li.hidden = !ok; if (ok) shown++;
+      if (ok && st.anim && st.animReady && !li.classList.contains('is-in') && !st.io) li.classList.add('is-in');
+    });
+    var status = root.querySelector('.ktm-tl__status');
+    if (status) status.textContent = (shown === items.length ? items.length + (items.length === 1 ? ' event' : ' events') : 'Showing ' + shown + ' of ' + items.length + ' events');
+    var empty = root.querySelector('p.ktm-tl__empty'); if (empty) empty.hidden = shown > 0 || !items.length;
+    layoutAfter(root, st);
+  }
+
+  /* ---------- modal ---------- */
+  function findEv(st, id) { for (var i = 0; i < st.P.events.length; i++) if (st.P.events[i].id === id) return { ev: st.P.events[i], i: i }; return null; }
+  function openModal(root, st, id, trigger, lightbox) {
+    var f = findEv(st, id); if (!f) return;
+    var ev = f.ev, P = st.P, modal = root.querySelector('.ktm-tl__modal'), body = modal.querySelector('.ktm-tl__mbody'), dlg = modal.querySelector('.ktm-tl__dialog');
+    var html = '';
+    if (lightbox) {
+      var src = safeUrl(ev.image.url, 'image');
+      html = '<img class="ktm-tl__img" src="' + esc(src) + '" alt="' + esc(ev.image.alt || '') + '">' + (ev.image.caption ? '<p class="ktm-tl__cap">' + esc(ev.image.caption) + '</p>' : '');
+      dlg.setAttribute('aria-label', ev.image.alt ? 'Image: ' + ev.image.alt : 'Image from ' + (ev.title || 'event'));
+      dlg.removeAttribute('aria-labelledby');
+    } else {
+      var cat = catOf(P, ev.categoryId);
+      html = imageHTML(ev, P, true) + '<p class="ktm-tl__meta">' + timeTag(ev, P) + (cat ? '<span class="ktm-tl__cat"><span class="ktm-tl__dot" style="--c:' + esc(cat.color) + '"></span>' + esc(cat.name) + '</span>' : '') + (ev.highlight ? '<span class="ktm-tl__badge">' + SVG.star + 'Key milestone</span>' : '') + '</p>' +
+        '<h3 class="ktm-tl__title" id="ktm-mt-' + esc(ev.id) + '">' + esc(ev.title || 'Untitled event') + '</h3>' +
+        (ev.description ? '<div class="ktm-tl__desc">' + paragraphs(ev.description) + '</div>' : '') + mediaHTML(ev, true) + linkHTML(ev);
+      dlg.setAttribute('aria-labelledby', 'ktm-mt-' + ev.id); dlg.removeAttribute('aria-label');
+    }
+    body.innerHTML = html;
+    modal.classList.toggle('is-lightbox', !!lightbox);
+    modal.hidden = false; st.modalReturn = trigger || null;
+    st.prevOverflow = doc.body.style.overflow; doc.body.style.overflow = 'hidden';
+    var close = modal.querySelector('.ktm-tl__close'); (close || dlg).focus();
+  }
+  function closeModal(root, st) {
+    var modal = root.querySelector('.ktm-tl__modal'); if (!modal || modal.hidden) return;
+    modal.hidden = true; modal.querySelector('.ktm-tl__mbody').innerHTML = '';
+    doc.body.style.overflow = st.prevOverflow || '';
+    if (st.modalReturn && st.modalReturn.focus) st.modalReturn.focus();
+    st.modalReturn = null;
+  }
+
+  /* ---------- events ---------- */
+  function bind(root, st) {
+    root.addEventListener('input', function (e) {
+      if (e.target.classList.contains('ktm-tl__search')) { st.q = e.target.value; applyFilter(root, st); }
+    });
+    root.addEventListener('click', function (e) {
+      var t = e.target, el;
+      if ((el = t.closest('[data-close]'))) { closeModal(root, st); return; }
+      if ((el = t.closest('.ktm-tl__chip'))) {
+        st.cat = el.getAttribute('data-cat');
+        root.querySelectorAll('.ktm-tl__chip').forEach(function (b) { b.setAttribute('aria-pressed', String(b === el)); });
+        applyFilter(root, st); return;
+      }
+      if ((el = t.closest('.ktm-tl__toggle'))) {
+        var li = el.closest('.ktm-tl__item'), id = li.getAttribute('data-id'), open = el.getAttribute('aria-expanded') !== 'true';
+        setExpanded(root, st, li, open); return;
+      }
+      if ((el = t.closest('[data-expand-all]'))) {
+        var anyClosed = Array.prototype.some.call(root.querySelectorAll('.ktm-tl__toggle'), function (b) { return b.getAttribute('aria-expanded') !== 'true'; });
+        root.querySelectorAll('.ktm-tl__item').forEach(function (li) { if (li.querySelector('.ktm-tl__toggle')) setExpanded(root, st, li, anyClosed); });
+        el.textContent = anyClosed ? 'Collapse all' : 'Expand all'; layoutAfter(root, st); return;
+      }
+      if ((el = t.closest('[data-open]'))) { openModal(root, st, el.getAttribute('data-open'), el, false); return; }
+      if ((el = t.closest('[data-lightbox]'))) { openModal(root, st, el.getAttribute('data-lightbox'), el, true); return; }
+      if ((el = t.closest('[data-video]'))) {
+        var wrap = doc.createElement('div'); wrap.className = 'ktm-tl__frame';
+        var ifr = doc.createElement('iframe');
+        ifr.src = 'https://www.youtube-nocookie.com/embed/' + el.getAttribute('data-video') + '?autoplay=1';
+        ifr.title = el.getAttribute('data-title') || 'Video'; ifr.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+        ifr.setAttribute('allowfullscreen', ''); ifr.referrerPolicy = 'strict-origin-when-cross-origin';
+        wrap.appendChild(ifr); el.replaceWith(wrap); ifr.focus(); layoutAfter(root, st); return;
+      }
+      if ((el = t.closest('[data-hnav]'))) {
+        var sc = root.querySelector('.ktm-tl__hscroll'), dir = parseInt(el.getAttribute('data-hnav'), 10);
+        sc.scrollBy({ left: dir * Math.max(240, sc.clientWidth * 0.8), behavior: reduced() ? 'auto' : 'smooth' }); return;
+      }
+      var card = t.closest('.ktm-tl__card');
+      if (card && st.P.design.interaction.mode === 'hover' && !t.closest('a,button,audio,iframe')) card.classList.toggle('is-peek');
+      if (card && st.opts.onSelect && !t.closest('a,button,input,audio,iframe')) {
+        var li2 = card.closest('.ktm-tl__item'); if (li2) st.opts.onSelect(li2.getAttribute('data-id'));
+      }
+    });
+    root.addEventListener('keydown', function (e) {
+      var modal = root.querySelector('.ktm-tl__modal');
+      if (modal && !modal.hidden) {
+        if (e.key === 'Escape') { e.preventDefault(); closeModal(root, st); return; }
+        if (e.key === 'Tab') {
+          var f = modal.querySelectorAll('button,a[href],iframe,audio,[tabindex]:not([tabindex="-1"])'), list = Array.prototype.filter.call(f, function (x) { return x.offsetParent !== null || x.tagName === 'IFRAME'; });
+          if (!list.length) return;
+          var first = list[0], last = list[list.length - 1];
+          if (e.shiftKey && doc.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && doc.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
+        return;
+      }
+      if (e.target.classList && e.target.classList.contains('ktm-tl__hscroll') && (e.key === 'ArrowRight' || e.key === 'ArrowLeft')) {
+        e.preventDefault(); e.target.scrollBy({ left: (e.key === 'ArrowRight' ? 1 : -1) * 280, behavior: reduced() ? 'auto' : 'smooth' });
+      }
+      if (e.target.classList && e.target.classList.contains('ktm-tl__card') && (e.key === 'Enter' || e.key === ' ') && st.P.design.interaction.mode === 'hover') {
+        e.preventDefault(); e.target.classList.toggle('is-peek');
+      }
+    });
+    root.addEventListener('scroll', function (e) { if (e.target.classList && e.target.classList.contains('ktm-tl__hscroll')) hnavUpdate(root); }, true);
+    root.addEventListener('error', function (e) {
+      var img = e.target;
+      if (!img || img.tagName !== 'IMG' || !img.classList.contains('ktm-tl__img')) return;
+      var fail = doc.createElement('div'); fail.className = 'ktm-tl__imgfail'; fail.setAttribute('role', 'img');
+      fail.setAttribute('aria-label', 'Image unavailable' + (img.alt ? ': ' + img.alt : ''));
+      fail.innerHTML = SVG.img + '<span>Image unavailable</span>';
+      var btn = img.closest('.ktm-tl__imgbtn'); (btn || img).replaceWith(fail);
+      layoutAfter(root, st);
+    }, true);
+    root.addEventListener('load', function (e) { if (e.target && e.target.tagName === 'IMG') scheduleLayout(root, st); }, true);
+    if (w.ResizeObserver) {
+      st.ro = new ResizeObserver(function () { scheduleLayout(root, st, true); });
+      st.ro.observe(root);
+    } else w.addEventListener('resize', function () { scheduleLayout(root, st, true); });
+    if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(function () { scheduleLayout(root, st); });
+  }
+  function setExpanded(root, st, li, open) {
+    var btn = li.querySelector('.ktm-tl__toggle'), more = li.querySelector('.ktm-tl__more'), id = li.getAttribute('data-id');
+    if (!btn || !more) return;
+    btn.setAttribute('aria-expanded', String(open)); btn.querySelector('span').textContent = open ? 'Show less' : 'Read more';
+    more.hidden = !open; st.expanded[id] = open; layoutAfter(root, st);
+  }
+  function scheduleLayout(root, st, resized) {
+    if (st.raf) return;
+    st.raf = (w.requestAnimationFrame || setTimeout)(function () {
+      st.raf = 0;
+      if (resized) {
+        var wd = root.clientWidth, narrow = wd < st.P.design.responsive.breakpoint;
+        if (narrow !== st.narrow) { draw(root, st); return; }
+      }
+      layoutAfter(root, st);
+    });
+  }
+  function reduced() { return !!(w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches); }
+
+  /* ---------- animation ---------- */
+  function setupAnim(root, st) {
+    if (st.io) { st.io.disconnect(); st.io = null; }
+    if (!st.anim) return;
+    var items = root.querySelectorAll('.ktm-tl__item');
+    var A = st.P.design.animation;
+    if (!A.scrollReveal || !w.IntersectionObserver) {
+      Array.prototype.forEach.call(items, function (li, k) { li.style.setProperty('--k', k); });
+      root.getBoundingClientRect();
+      (w.requestAnimationFrame || setTimeout)(function () {
+        Array.prototype.forEach.call(items, function (li) { li.classList.add('is-in'); });
+        (st.pendingRoad || []).forEach(function (f) { f(); }); st.pendingRoad = [];
+      });
+      return;
+    }
+    st.io = new IntersectionObserver(function (entries) {
+      var k = 0;
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var t = en.target;
+        if (t.classList.contains('ktm-tl__road')) { (st.pendingRoad || []).forEach(function (f) { f(); }); st.pendingRoad = []; st.io.unobserve(t); return; }
+        t.style.setProperty('--k', k++); t.classList.add('is-in'); st.io.unobserve(t);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+    Array.prototype.forEach.call(items, function (li) { st.io.observe(li); });
+    var road = root.querySelector('.ktm-tl__road');
+    if (road && st.pendingRoad && st.pendingRoad.length) st.io.observe(road);
+  }
+
+  /* ---------- public API ---------- */
+  var uidN = 0;
+  function draw(root, st) {
+    var P = st.P, D = P.design;
+    var wd = root.clientWidth || w.innerWidth || 1024;
+    st.narrow = wd < D.responsive.breakpoint;
+    var lay = P.layout.type;
+    if (lay === 'horizontal' && st.narrow && D.responsive.mobileHorizontal === 'vertical') lay = 'single';
+    st.lay = lay;
+    st.anim = !!(D.animation.enabled && !reduced() && !st.capture && !st.skipAnim);
+    st.roadRevealed = false; st.roadQueued = false; st.pendingRoad = [];
+    if (st.io) { st.io.disconnect(); st.io = null; }
+    root.className = rootClasses(P, st);
+    root.setAttribute('style', vars(D, st));
+    root.setAttribute('lang', P.meta.lang || 'en');
+    if (!root.getAttribute('aria-label')) root.setAttribute('aria-label', P.meta.title || 'Timeline');
+    root.innerHTML = build(P, st);
+    st.animReady = false;
+    applyFilter(root, st);
+    setupAnim(root, st);
+    st.animReady = true;
+    st.skipAnim = false;
+  }
+  function parseP(P) { return typeof P === 'string' ? JSON.parse(P) : P; }
+  function mount(root, P, opts) {
+    if (!root) return null;
+    var st = root.__ktm;
+    if (!st) { st = root.__ktm = { q: '', cat: '', expanded: {}, uid: 'k' + (++uidN), opts: {} }; }
+    st.P = parseP(P); st.opts = opts || {};
+    st.capture = !!st.opts.capture; st.captureTools = !!st.opts.captureTools;
+    if (st.opts.noAnim) st.skipAnim = true;
+    if (st.capture && st.P.design.interaction.mode === 'expand') st.P.events.forEach(function (e) { st.expanded[e.id] = true; });
+    if (!st.bound) { bind(root, st); st.bound = true; }
+    if (st.opts.manageFonts !== false) ensureFonts(st.P.design);
+    draw(root, st);
+    return st;
+  }
+  function renderStatic(P) {
+    var st = { q: '', cat: '', expanded: {}, uid: 'k0', opts: {}, P: P, narrow: false, lay: P.layout.type, anim: false };
+    return { className: rootClasses(P, st), style: vars(P.design, st), html: build(P, st) };
+  }
+  function boot() {
+    var dataEl = doc.getElementById('ktm-timeline-data'), root = doc.getElementById('ktm-timeline');
+    if (!dataEl || !root) return;
+    var P;
+    try { P = JSON.parse(dataEl.textContent); } catch (e) { root.insertAdjacentHTML('afterbegin', '<p role="alert">Timeline data could not be read.</p>'); return; }
+    mount(root, P, { manageFonts: false });
+  }
+
+  w.KTMTimeline = {
+    version: RT_VERSION, mount: mount, update: mount, renderStatic: renderStatic, boot: boot,
+    formatDate: formatDate, sortKey: sortKey, parseDate: parseDate, esc: esc, safeUrl: safeUrl, youtubeId: youtubeId,
+    fontsHref: fontsHref, fontStack: fontStack, FONTS: FONTS, inkFor: inkFor
+  };
+})(window);
+</script>
+<script>KTMTimeline.boot();</script>
+</body>
+</html>

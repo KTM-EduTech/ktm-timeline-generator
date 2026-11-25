@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-app-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timeline Generator · KTM EduTech</title>
+<meta name="description" content="Create interactive, responsive timelines for teaching and learning — no code needed. Export standalone HTML, PNG or Google Sites embed code.">
+<meta name="theme-color" content="#232450">
+<link rel="icon" type="image/png" href="https://ik.imagekit.io/ktmedutech/KTM%20EduTech%20Images/ktm-logo.png?updatedAt=1776505502099">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>/*@APP_CSS@*/</style>
+</head>
+<body data-panel="preview">
+<a class="skip" href="#stage">Skip to preview</a>
+<div class="fatal" id="fatal" role="alert" hidden><b>The editor could not start.</b> <span></span></div>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="https://ik.imagekit.io/ktmedutech/KTM%20EduTech%20Images/ktm-logo.png?updatedAt=1776505502099" alt="" width="34" height="34" onerror="this.style.display='none'">
+    <div class="brand-text"><span class="brand-name">KTM EduTech</span><span class="brand-product">Timeline Generator</span></div>
+  </div>
+  <div class="proj">
+    <label class="sr" for="projName">Project name</label>
+    <input id="projName" class="proj-name" maxlength="120" autocomplete="off" spellcheck="false">
+    <span id="saveStatus" class="save-status" role="status" aria-live="polite"></span>
+  </div>
+  <div class="top-actions">
+    <button type="button" id="btnUndo" class="icon-btn on-dark" aria-label="Undo" title="Undo (Ctrl+Z)"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
+    <button type="button" id="btnRedo" class="icon-btn on-dark" aria-label="Redo" title="Redo (Ctrl+Shift+Z)"><i class="fa-solid fa-rotate-right" aria-hidden="true"></i></button>
+    <span class="sep" aria-hidden="true"></span>
+    <button type="button" id="btnTemplates" class="btn on-dark"><i class="fa-solid fa-shapes" aria-hidden="true"></i><span>Templates</span></button>
+    <button type="button" id="btnProjects" class="btn on-dark"><i class="fa-solid fa-folder-open" aria-hidden="true"></i><span>Projects</span></button>
+    <button type="button" id="btnImport" class="btn on-dark"><i class="fa-solid fa-file-import" aria-hidden="true"></i><span>Import</span></button>
+    <button type="button" id="btnExport" class="btn gold"><i class="fa-solid fa-arrow-up-from-bracket" aria-hidden="true"></i><span>Export</span></button>
+    <button type="button" id="btnAppTheme" class="icon-btn on-dark" aria-label="Switch editor to dark theme"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
+    <button type="button" id="btnHelp" class="icon-btn on-dark" aria-label="Help"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<nav class="mtabs" role="tablist" aria-label="Editor panels">
+  <button type="button" class="mtab" role="tab" data-panel="events" aria-selected="false"><i class="fa-solid fa-list" aria-hidden="true"></i><span>Events</span></button>
+  <button type="button" class="mtab" role="tab" data-panel="preview" aria-selected="true"><i class="fa-solid fa-eye" aria-hidden="true"></i><span>Preview</span></button>
+  <button type="button" class="mtab" role="tab" data-panel="design" aria-selected="false"><i class="fa-solid fa-palette" aria-hidden="true"></i><span>Design</span></button>
+</nav>
+
+<main class="workspace">
+  <!-- Left: timeline manager -->
+  <aside class="panel panel-events" id="panelEvents" aria-label="Timeline manager">
+    <details class="block" open>
+      <summary><i class="fa-solid fa-heading" aria-hidden="true"></i> Timeline details</summary>
+      <div class="field"><label for="metaTitle">Title</label><input id="metaTitle" class="input" maxlength="200"></div>
+      <div class="field"><label for="metaSubtitle">Subtitle</label><input id="metaSubtitle" class="input" maxlength="300"></div>
+      <label class="check"><input type="checkbox" id="metaShowHeader"><span>Show title and subtitle on the timeline</span></label>
+    </details>
+
+    <section class="block events-block" aria-labelledby="evHeading">
+      <div class="block-head">
+        <h2 id="evHeading">Events <span class="count" id="eventCount">0</span></h2>
+        <button type="button" class="btn primary sm" id="btnAddEvent"><i class="fa-solid fa-plus" aria-hidden="true"></i><span>Add event</span></button>
+      </div>
+      <div class="ev-tools">
+        <div class="search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><label class="sr" for="eventSearch">Search events</label><input id="eventSearch" class="input" type="search" placeholder="Search events" autocomplete="off"></div>
+        <label class="sr" for="sortSelect">Sort events</label>
+        <select id="sortSelect" class="input sort"><option value="">Sort…</option><option value="chrono">Oldest first</option><option value="chrono-desc">Newest first</option><option value="category">Group by category</option><option value="title">Title A–Z</option></select>
+      </div>
+      <div class="ev-tools2"><button type="button" class="linkbtn" id="btnExpandAll">Expand all</button><button type="button" class="linkbtn" id="btnCollapseAll">Collapse all</button><span class="hint">Drag <i class="fa-solid fa-grip-vertical" aria-hidden="true"></i> to reorder</span></div>
+      <ul class="ev-list" id="eventList" aria-label="Events in display order"></ul>
+      <div class="empty" id="eventsEmpty" hidden><p>No events yet.</p><button type="button" class="btn primary" id="btnAddEvent2"><i class="fa-solid fa-plus" aria-hidden="true"></i><span>Add your first event</span></button></div>
+    </section>
+
+    <details class="block">
+      <summary><i class="fa-solid fa-tags" aria-hidden="true"></i> Categories</summary>
+      <p class="hint">Categories colour-code events and power the filter buttons on the timeline.</p>
+      <ul class="cat-list" id="catList" aria-label="Categories"></ul>
+      <p class="hint" id="catEmpty">No categories yet.</p>
+      <button type="button" class="btn ghost sm" id="btnAddCat"><i class="fa-solid fa-plus" aria-hidden="true"></i><span>Add category</span></button>
+    </details>
+  </aside>
+
+  <!-- Centre: live preview -->
+  <section class="panel panel-preview" id="panelPreview" aria-label="Live preview">
+    <div class="pv-bar">
+      <div class="seg dev" role="group" aria-label="Preview size">
+        <button type="button" data-device="desktop" aria-pressed="true" title="Desktop"><i class="fa-solid fa-desktop" aria-hidden="true"></i><span class="sr">Desktop</span></button>
+        <button type="button" data-device="tablet" aria-pressed="false" title="Tablet"><i class="fa-solid fa-tablet-screen-button" aria-hidden="true"></i><span class="sr">Tablet</span></button>
+        <button type="button" data-device="mobile" aria-pressed="false" title="Mobile"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i><span class="sr">Mobile</span></button>
+      </div>
+      <span class="hint dev-info" id="deviceInfo"></span>
+      <label class="sr" for="layoutQuick">Layout</label>
+      <select id="layoutQuick" class="input sm layout-quick">
+        <option value="alternating">Alternating</option><option value="single">Single-sided</option><option value="horizontal">Horizontal</option>
+        <option value="cards">Cards</option><option value="roadmap">Roadmap</option><option value="compact">Compact</option>
+      </select>
+      <div class="zoom" role="group" aria-label="Zoom">
+        <button type="button" class="icon-btn sm" id="zoomOut" aria-label="Zoom out"><i class="fa-solid fa-minus" aria-hidden="true"></i></button>
+        <button type="button" class="zoom-label" id="zoomFit" title="Fit to panel"><span id="zoomLabel">100%</span><span class="sr"> — fit to panel</span></button>
+        <button type="button" class="icon-btn sm" id="zoomIn" aria-label="Zoom in"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+      </div>
+      <span class="pv-spacer"></span>
+      <button type="button" class="icon-btn sm" id="btnReplay" aria-label="Replay animation" title="Replay animation"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+      <button type="button" class="icon-btn sm" id="btnRefresh" aria-label="Reload preview" title="Reload preview"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></button>
+      <button type="button" class="icon-btn sm" id="btnFull" aria-label="Full-screen preview" aria-pressed="false" title="Full screen"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+      <button type="button" class="btn ghost sm design-toggle" id="btnDesignToggle" aria-expanded="false" aria-controls="panelDesign"><i class="fa-solid fa-palette" aria-hidden="true"></i><span>Design</span></button>
+    </div>
+    <div class="stage-box" id="stageBox">
+      <div class="stage" id="stage" tabindex="-1">
+        <div class="frame-wrap" id="frameWrap"><iframe id="previewFrame" title="Timeline preview — click an event to edit it"></iframe></div>
+      </div>
+    </div>
+    <p class="pv-foot hint">Click any event in the preview to edit it. The preview uses the same code as the exported file.</p>
+  </section>
+
+  <!-- Right: design studio -->
+  <aside class="panel panel-design" id="panelDesign" aria-label="Design studio">
+    <div class="design-head"><h2>Design studio</h2><button type="button" class="icon-btn sm design-close" id="btnDesignClose" aria-label="Close design studio"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <section class="block presets" aria-labelledby="presetH">
+      <h3 id="presetH" class="mini-h">Theme presets</h3>
+      <div class="preset-grid" id="presetGrid"></div>
+      <details class="sub">
+        <summary>Saved themes in this project</summary>
+        <ul class="ctheme-list" id="customThemes"></ul>
+        <button type="button" class="btn ghost sm" id="btnSaveTheme"><i class="fa-solid fa-floppy-disk" aria-hidden="true"></i><span>Save current design as theme</span></button>
+      </details>
+    </section>
+    <div id="designSections"></div>
+  </aside>
+</main>
+
+<div id="dialogRoot"></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<noscript><p class="fatal">The Timeline Generator needs JavaScript to run.</p></noscript>
+<script>/*@RUNTIME_SOURCE@*/</script>
+<script>/*@RUNTIME_JS@*/</script>
+<script>/*@APP_JS@*/</script>
+</body>
+</html>

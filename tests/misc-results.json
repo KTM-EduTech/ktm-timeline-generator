@@ -1,0 +1,57 @@
+[
+ [
+  "storage full: status + message",
+  true,
+  ""
+ ],
+ [
+  "storage recovers",
+  true,
+  ""
+ ],
+ [
+  "Ctrl+Z undo shortcut",
+  true,
+  ""
+ ],
+ [
+  "Ctrl+Shift+Z redo shortcut",
+  true,
+  ""
+ ],
+ [
+  "save custom theme",
+  true,
+  ""
+ ],
+ [
+  "apply custom theme",
+  true,
+  ""
+ ],
+ [
+  "template replace keeps project id",
+  true,
+  ""
+ ],
+ [
+  "undo template replace",
+  true,
+  ""
+ ],
+ [
+  "progress slider max = events",
+  true,
+  ""
+ ],
+ [
+  "zoom control",
+  true,
+  "70%"
+ ],
+ [
+  "phone opens with mobile preview",
+  true,
+  ""
+ ]
+]

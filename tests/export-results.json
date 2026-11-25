@@ -1,0 +1,197 @@
+[
+ [
+  "standalone: renders 10 events",
+  true,
+  ""
+ ],
+ [
+  "standalone: no editor dependency",
+  true,
+  ""
+ ],
+ [
+  "standalone: search",
+  true,
+  ""
+ ],
+ [
+  "standalone: empty search message",
+  true,
+  ""
+ ],
+ [
+  "standalone: category filter",
+  true,
+  ""
+ ],
+ [
+  "standalone: failed image shows placeholder",
+  true,
+  ""
+ ],
+ [
+  "standalone: lightbox opens + focus moves",
+  true,
+  ""
+ ],
+ [
+  "standalone: Esc closes, focus returns",
+  true,
+  ""
+ ],
+ [
+  "standalone: YouTube lite embed loads iframe",
+  true,
+  ""
+ ],
+ [
+  "standalone: audio element",
+  true,
+  ""
+ ],
+ [
+  "standalone: time datetime attr",
+  true,
+  ""
+ ],
+ [
+  "axe exported timeline (always): no WCAG A/AA violations",
+  true,
+  "[]"
+ ],
+ [
+  "expand: collapsed by default",
+  true,
+  ""
+ ],
+ [
+  "expand: toggle opens",
+  true,
+  ""
+ ],
+ [
+  "expand: expand all",
+  true,
+  ""
+ ],
+ [
+  "axe exported timeline (expand): no WCAG A/AA violations",
+  true,
+  "[]"
+ ],
+ [
+  "modal: opens dialog with aria",
+  true,
+  ""
+ ],
+ [
+  "modal: focus trapped",
+  true,
+  ""
+ ],
+ [
+  "modal: backdrop closes",
+  true,
+  ""
+ ],
+ [
+  "modal: YouTube iframe in modal",
+  true,
+  ""
+ ],
+ [
+  "axe modal dialog: no WCAG A/AA violations",
+  true,
+  "[]"
+ ],
+ [
+  "hover: description reveals on hover",
+  true,
+  [
+   "0",
+   "1"
+  ]
+ ],
+ [
+  "hover: reveals on keyboard focus",
+  true,
+  ""
+ ],
+ [
+  "no-JS: content still readable (pre-rendered)",
+  true,
+  ""
+ ],
+ [
+  "reduced motion: no animation classes, all visible",
+  true,
+  ""
+ ],
+ [
+  "scroll reveal animation",
+  true,
+  [
+   "0",
+   "1"
+  ]
+ ],
+ [
+  "iframe 360px: renders, no horizontal overflow",
+  true,
+  [
+   360,
+   360
+  ]
+ ],
+ [
+  "iframe 360px: scrolls internally",
+  true,
+  ""
+ ],
+ [
+  "iframe 768px: renders, no horizontal overflow",
+  true,
+  [
+   768,
+   768
+  ]
+ ],
+ [
+  "iframe 768px: scrolls internally",
+  true,
+  ""
+ ],
+ [
+  "iframe 1280px: renders, no horizontal overflow",
+  true,
+  [
+   1280,
+   1280
+  ]
+ ],
+ [
+  "iframe 1280px: scrolls internally",
+  true,
+  ""
+ ],
+ [
+  "source export runs from separate files",
+  true,
+  ""
+ ],
+ [
+  "snippet: renders inside existing page",
+  true,
+  ""
+ ],
+ [
+  "snippet: does not restyle host page",
+  true,
+  ""
+ ],
+ [
+  "axe editor: no WCAG A/AA violations",
+  true,
+  "[]"
+ ]
+]

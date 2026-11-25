@@ -1,0 +1,275 @@
+[
+ [
+  "create event",
+  true,
+  ""
+ ],
+ [
+  "edit title reflected in preview (escaped)",
+  true,
+  "Test <b>Event</b>"
+ ],
+ [
+  "date shown in preview",
+  true,
+  ""
+ ],
+ [
+  "description paragraphs",
+  true,
+  ""
+ ],
+ [
+  "highlight badge",
+  true,
+  ""
+ ],
+ [
+  "invalid date hint shown",
+  true,
+  ""
+ ],
+ [
+  "custom date label",
+  true,
+  ""
+ ],
+ [
+  "javascript: link rejected",
+  true,
+  ""
+ ],
+ [
+  "external link rendered safely",
+  true,
+  ""
+ ],
+ [
+  "duplicate event",
+  true,
+  ""
+ ],
+ [
+  "duplicate has new id + copy title",
+  true,
+  ""
+ ],
+ [
+  "move up",
+  true,
+  ""
+ ],
+ [
+  "Alt+Down moves",
+  true,
+  ""
+ ],
+ [
+  "drag and drop reorder",
+  true,
+  2
+ ],
+ [
+  "preview order matches data",
+  true,
+  ""
+ ],
+ [
+  "chronological sort",
+  true,
+  [
+   1822,
+   1843,
+   1936,
+   1946,
+   1947,
+   1971,
+   1981,
+   1989,
+   1997,
+   1997,
+   2007,
+   2022
+  ]
+ ],
+ [
+  "undo restores order",
+  true,
+  ""
+ ],
+ [
+  "redo",
+  true,
+  ""
+ ],
+ [
+  "delete cancel keeps event",
+  true,
+  ""
+ ],
+ [
+  "delete confirmed",
+  true,
+  ""
+ ],
+ [
+  "list search filters",
+  true,
+  ""
+ ],
+ [
+  "layout single renders all events",
+  true,
+  11
+ ],
+ [
+  "layout horizontal renders all events",
+  true,
+  11
+ ],
+ [
+  "layout cards renders all events",
+  true,
+  11
+ ],
+ [
+  "layout roadmap renders all events",
+  true,
+  11
+ ],
+ [
+  "layout compact renders all events",
+  true,
+  11
+ ],
+ [
+  "layout alternating renders all events",
+  true,
+  11
+ ],
+ [
+  "layout switching preserves events",
+  true,
+  ""
+ ],
+ [
+  "preset applied",
+  true,
+  "#F8F9FB"
+ ],
+ [
+  "colour HEX input updates preview",
+  true,
+  ""
+ ],
+ [
+  "font change updates preview + loads font link",
+  true,
+  ""
+ ],
+ [
+  "reset section",
+  true,
+  ""
+ ],
+ [
+  "mobile preview narrow class",
+  true,
+  ""
+ ],
+ [
+  "click preview selects event in editor",
+  true,
+  ""
+ ],
+ [
+  "add category",
+  true,
+  ""
+ ],
+ [
+  "LocalStorage persistence after reload",
+  true,
+  ""
+ ],
+ [
+  "JSON export has schema+version",
+  true,
+  ""
+ ],
+ [
+  "HTML export downloaded",
+  true,
+  98772
+ ],
+ [
+  "source zip valid",
+  true,
+  [
+   "index.html",
+   "timeline.css",
+   "timeline.js",
+   "README.txt"
+  ]
+ ],
+ [
+  "gsites rejects http",
+  true,
+  ""
+ ],
+ [
+  "gsites iframe code",
+  true,
+  "<iframe   src=\"https://kyd.github.io/timeline.html\"   width=\"100%\"   height=\"950\"   style=\"border:0;max-width:100%;\"   loading=\"lazy\"   title=\"The History of Computers\"   allow=\"fullscreen; encrypted-media; picture-in-picture\"   referrerpolicy=\"strict-origin-when-cross-origin\"> </iframe>"
+ ],
+ [
+  "sandboxed iframe test renders + JS works",
+  true,
+  ""
+ ],
+ [
+  "PNG export",
+  true,
+  "2400 \u00d7 4802 px \u00b7 879.6 KB  Download PNG"
+ ],
+ [
+  "import as copy",
+  true,
+  ""
+ ],
+ [
+  "newer version rejected",
+  true,
+  ""
+ ],
+ [
+  "invalid JSON rejected",
+  true,
+  ""
+ ],
+ [
+  "malicious import sanitised",
+  true,
+  ""
+ ],
+ [
+  "no script elements injected in preview",
+  true,
+  ""
+ ],
+ [
+  "export escapes </script> in data",
+  true,
+  ""
+ ],
+ [
+  "template creates new project",
+  true,
+  ""
+ ],
+ [
+  "projects dialog lists projects",
+  true,
+  ""
+ ]
+]
